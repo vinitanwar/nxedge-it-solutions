@@ -15,7 +15,6 @@ import { Autoplay } from "swiper/modules";
 const Services = () => {
   const [widht, setwidth] = useState(0);
  
-  // mobile light color 
   const services = [
     {
       title: "Search Engine Optimization (SEO)",

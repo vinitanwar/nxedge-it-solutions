@@ -2,10 +2,21 @@
 
 import React from "react";
 import Link from "next/link";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Autoplay } from "swiper/modules";
+
 import { IoIosArrowForward } from "react-icons/io";
-import { FaUserAlt } from "react-icons/fa";
-import { FaEnvelope } from "react-icons/fa";
+import { FaEnvelope, FaUserAlt } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
+import { GrEdit } from "react-icons/gr";
 
 import {
   FaBrush,
@@ -3466,32 +3477,78 @@ export default function page({ params }) {
     },
   };
 
-  const serviceMenu=[
+  const serviceMenu = [
     {
-      servieName:" E-commerce Website",
-      link:"/AllService/EcoomWebsite"
+      servieName: " E-commerce Website",
+      link: "/AllService/EcoomWebsite",
     },
     {
-      servieName:" Android App Development",
-      link:"/AllService/androidapplicationdevelopment"
+      servieName: " Android App Development",
+      link: "/AllService/androidapplicationdevelopment",
     },
     {
-      servieName:"   Ios App Development",
-      link:"/AllService/iosApplicationDevelopment"
+      servieName: "   Ios App Development",
+      link: "/AllService/iosApplicationDevelopment",
     },
     {
-      servieName:" Seo Services",
-      link:"/AllService/searchEngineOptimization"
+      servieName: " Seo Services",
+      link: "/AllService/searchEngineOptimization",
     },
     {
-      servieName:" Content Marketing Services",
-      link:"/AllService/contentMarketingService"
+      servieName: " Content Marketing Services",
+      link: "/AllService/contentMarketingService",
     },
     {
-      servieName:" Coporate Identity Design",
-      link:"/AllService/corporateStationeryDesign"
+      servieName: " Coporate Identity Design",
+      link: "/AllService/corporateStationeryDesign",
     },
-  ]
+  ];
+
+  const services = [
+    {
+      title: "SEO Strategy & Optimization",
+      description:
+        "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+      image: "/images/services/img1.webp",
+      bgColor: "#2E4053", // Darker Blue Slate
+    },
+    {
+      title: "PPC Campaigns for SEO",
+      description:
+        "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+      image: "/images/services/img2.webp",
+      bgColor: "#6C3483", // Vibrant Purple
+    },
+    {
+      title: "Social Media & SEO Integration",
+      description:
+        "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+      image: "/images/services/img3.webp",
+      bgColor: "#1E8449", // Forest Green
+    },
+    {
+      title: "Web Design for SEO",
+      description:
+        "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+      image: "/images/services/img5.webp",
+      bgColor: "#34495E", // Charcoal Blue
+    },
+    {
+      title: "Content Creation for SEO",
+      description:
+        "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+      image: "/images/services/img6.webp",
+      bgColor: "#884EA0", // Dark Lavender
+    },
+    {
+      title: "Local SEO Optimization",
+      description:
+        "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+      image: "/images/services/img7.webp",
+      bgColor: "#239B56", // Bold Green
+    },
+  ];
+
   return (
     <>
       {/* Banner section  */}
@@ -3542,94 +3599,267 @@ export default function page({ params }) {
         />
       </section>
 
-      <div className="layout grid grid-cols-8 px-4 md:px-10 lg:px-20  gap-5 py-10">
-        <div className="col-span-6">
-          <div className="space-y-5">
-            <div>
-              {" "}
-              <img
-                src="/images/AllServiceImages/WEBAPPLICATIONDEVELOPMENT.avif"
-                alt=""
-                className="w-full h-[50vh] object-cover"
-              />{" "}
-            </div>
-            <div className="space-y-5">
-              <h4 className="text-center font-bold text-2xl">
-                Heavy Haul Transportation: Your Trusted Partner in Moving the
-                Unmovable
+      <div className="layout grid grid-cols-1 lg:grid-cols-9 md:px-10 lg:px-20  gap-10 py-10">
+        {/* left side content Section  */}
+        <div className="lg:col-span-6 space-y-4 px-4">
+          <div className="space-y-5 text-center md:text-start secondSection">
+            <div className=" space-y-4 ">
+              <h4 className="text-lg font-bold md:text-3xl ">
+                {allData[particuluarService].Section2.heading}
               </h4>
-              <p className="text-lg">
-                At the forefront of heavy haul transportation, NexGen Global
-                Logistics stands as undisputed experts, committed to delivering
-                your heaviest and most oversized cargoes with unmatched
-                precision and care. Our extensive fleet includes specialized
-                equipment such as lowboys, RGNs (Removable Gooseneck Trailers),
-                perimeter trailers, and dual-lane trailers, each designed to
-                cater to the most demanding haulage needs. Lowboys provide a low
-                deck height ideal for tall and heavy machinery, while RGNs allow
-                easy front loading and unloading, perfect for bulky construction
-                equipment. Perimeter trailers distribute weight evenly, ensuring
-                safe transport of extremely heavy and oversized loads, and
-                dual-lane trailers offer maximum stability for the heaviest
-                cargoes. We tailor our transportation solutions to meet your
-                unique challenges, ensuring safe, efficient, and timely delivery
-                from planning through execution, including route surveys,
-                permits, and escorts. With our team's extensive experience,
-                unwavering commitment to safety, and efficient logistics, NexGen
-                Global Logistics ensures your heaviest cargoes are in the most
-                capable hands.
+              <p className="text-md md:text-lg">
+                {allData[particuluarService].Section2.para}
               </p>
             </div>
-            <div className="space-y-5">
-              <h4 className="text-center font-bold text-2xl">
-                The Most Reliable And Secure Heavy Haul Transportation
-              </h4>
-              <div>
-                <img
-                  src="/images/AllServiceImages/WEBAPPLICATIONDEVELOPMENT.avif"
-                  alt=""
-                  className="w-full h-[50vh] object-cover"
-                />
+            <div className="Swiper Section">
+              <Swiper
+                loop={true}
+                spaceBetween={30}
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                }}
+                breakpoints={{
+                  320: {
+                    slidesPerView: 1, // For small screens (mobile)
+                    spaceBetween: 10,
+                  },
+                  640: {
+                    slidesPerView: 2, // For medium screens (small tablets)
+                    spaceBetween: 20,
+                  },
+                  768: {
+                    slidesPerView: 3, // For tablets
+                    spaceBetween: 30,
+                  },
+                  1024: {
+                    slidesPerView: 4, // For larger screens
+                    spaceBetween: 30,
+                  },
+                  1440: {
+                    slidesPerView: 3, // For very large screens (if needed)
+                    spaceBetween: 40,
+                  },
+                }}
+                modules={[Autoplay]}
+                className="mySwiper"
+              >
+                {services.map((service, index) => (
+                  <SwiperSlide key={index}>
+                    <div
+                      className="boxCard border text-center p-2 h-[25rem] rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+                      // style={{ backgroundColor: service.bgColor }}
+                    >
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="w-full h-40 object-cover rounded-md mb-4"
+                      />
+                      <h3 className="text-lg font-bold text-black mb-2 text-center">
+                        {service.title}
+                      </h3>
+                      <p className="text-base text-black leading-relaxed text-center ">
+                        {service.description}
+                      </p>
+                    </div>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
+          </div>
+          {/* Technologies we use section */}
+          <section className="Technologies section3  bg-[#f2f2f2] mx-2 md:px-8 lg:px-8 rounded-lg px-5  py-5 lg:py-14">
+            <h3 className="text-lg lg:text-3xl text-[#050748] font-bold">
+              {allData[particuluarService].section3.heading}
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 pt-5 lg:pt-10 gap-10 text-justify  text-lg text-[#6a6a8e]">
+              {allData[particuluarService].section3.data.map((elm) => {
+                return (
+                  <>
+                    <div className="Development-text">
+                      <div className="flex gap-3 items-center">
+                        {elm.image && (
+                          <img
+                            src={elm.image}
+                            alt="OpenCart Development"
+                            className="rounded-full w-10 lg:w-12"
+                          />
+                        )}
+                        <div className="text-[#e33f70] text-lg lg:text-2xl">
+                          {elm.icon && elm.icon}{" "}
+                        </div>
+
+                        <p className=" text-xl lg:text-lg text-[#e33f70]">
+                          {elm.heading}
+                        </p>
+                      </div>
+                      <p className="text-base lg:text-lg">{elm.description}</p>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+            <p className="mt-20 hidden md:block text-lg text-[#6a6a8e]">
+              We are a customer-oriented eCommerce website development company
+              in India striving to go beyond your expectations of a bespoke
+              online store. To get an impressive B2C or B2B eCommerce solution,
+              call us today or request a free quote now.
+            </p>
+          </section>
+
+          {/* cards section  */}
+          <div className="grid border rounded-2xl serviceCardSection overflow-auto h-[25rem] grid-cols-1 gap-6 shadow-lg my-10">
+            {allData[particuluarService].cards.map((service, index) => (
+              <div
+                key={index}
+                className="bg-white shadow-lg border rounded-lg border-gray-300 p-10 max-sm:p-5 text-center transition-transform transform hover:scale-105 hover:shadow-2xl animate-fadeInUp duration-500 ease-in-out"
+              >
+                <div className="text-[10px] md:text-3xl text-[#050748] mb-4 transition-all duration-300 hover:text-[#3b82f6]">
+                  {service.icon}
+                </div>
+                <h3 className="md:text-2xl text-[#050748] font-bold my-5 transition-all duration-300 hover:text-[#3b82f6]">
+                  {service.title}
+                </h3>
+                <p className="text-[#6a6a8e] text-sm md:text-base">
+                  {service.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* get support contcat  */}
+          <div className="GetSupport rounded-2xl bg-[url('/images/InnerService.avif')] bg-cover bg-center bg-no-repeat shadow-lg mx-auto px-6 ">
+            <div className="bg-black/40 p-6 rounded-lg shadow-md">
+              <div className="flex justify-center md:justify-end items-center">
+                <div className="w-full md:w-1/2 md:ml-4">
+                  <div className="flex flex-col sm:flex-row gap-5 items-center justify-between">
+                    <div className="text-white text-center sm:text-left">
+                      <h5 className="text-base sm:text-lg font-semibold tracking-wide">
+                        GET SUPPORT FOR
+                      </h5>
+                      <h3 className="text-3xl sm:text-5xl font-bold mt-2 sm:mt-0">
+                        90 DAYS
+                      </h3>
+                    </div>
+                    <div className="mt-4 sm:mt-0">
+                      <a href="/our-portfolio">
+                        <button className="bg-[#00a2ff] hover:bg-[#3b61e8] text-white font-semibold py-3 px-6 sm:px-8 rounded-md shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#00a2ff]/50">
+                          REQUEST A QUOTE
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <section className="CustomCms-website rounded-lg   bg-[#f2f2f2] py-5  px-5  md:px-8 lg:px-8 lg:py-14">
+            <div className="space-y-5">
+            <h3 className="text-lg text-start md:text-xl lg:text-3xl text-[#050748] font-bold">
+              {allData[particuluarService].section4.heading}
+            </h3>
+            <p className="text-base text-start lg:text-lg text-[#6a6a8e]">
+              {allData[particuluarService].section4.para}
+            </p>
+            <div className="h-72  overflow-hidden">
+              <img
+                src={allData[particuluarService].section4.img}
+                alt="Ecommerce Image"
+                className="rounded-2xl h-[100%] w-full object-cover"
+              />
+            </div>
+            </div>
+            <div className="flex flex-col items-center xl:flex-row  gap-10 mt-10">
+              <div className="grid md:grid-cols-2 pt-4 lg:pt-10 gap-10 text-lg text-[#6a6a8e]">
+                {allData[particuluarService].section4.data.map(
+                  (service, index) => (
+                    <div
+                      key={index}
+                      className="flex flex-col  text-center items-center   gap-5"
+                    >
+                      <div className="rounded-full p-4 bg-white border-2 border-[#e33f70]">
+                        <div className="text-[#e33f70] text-4xl">
+                          {service.icon}
+                        </div>
+                      </div>
+                      <div className="ml-2">
+                        <p className="text-xl font-bold text-[#e33f70]">
+                          {service.title}
+                        </p>
+                        <p className="mt-2 text-base md:text-lg">
+                          {service.description}
+                        </p>
+                      </div>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+            <p className="text-base text-gray-500 text-justify md:text-start md:text-lg mt-10">
+              {allData[particuluarService].section4.para}
+            </p>
+          </section>
         </div>
 
-        <div className="col-span-2">
-          <div className="RightServiceCard space-y-5">
-            <div className="card1 px-4 shadow-lg rounded-sm py-5">
+        {/* right side form and Link section */}
+        <div className="lg:col-span-3">
+          <div className="RightServiceCard space-y-8 sticky top-10">
+            <div className="card1 bg-slate-50 px-4 border  rounded-lg py-8">
               <h5 className="text-center text-2xl">Service Menu</h5>
               <ul className="flex flex-col gap-4 text-lg">
-                {serviceMenu.map((elm)=>(
-                 <Link href={elm.link} className="cursor-pointer">
-                 <li className="border-b p-2 flex items-center justify-between">
-                    {elm.servieName}
-                  <IoIosArrowForward />
-                </li>
-                 </Link>
+                {serviceMenu.map((elm) => (
+                  <Link href={elm.link} className={`cursor-pointer `}>
+                    <li className="border-b p-2 flex items-center justify-between">
+                      {elm.servieName}
+                      <IoIosArrowForward />
+                    </li>
+                  </Link>
                 ))}
-               
               </ul>
             </div>
-            <div className="card1 px-4 shadow-lg rounded-sm py-5">
-              <h5 className="text-center text-2xl">Fill The paper</h5>
+            <div className="card1 px-4  bg-slate-50 py-8 border rounded-lg">
+              <h5 className="text-center text-2xl">Fill The Form</h5>
               <div className="formSection">
-                  <form action="" className="flex flex-col gap-4">
-                    <div className="relative">
-                      <input type="text" placeholder="Full Name" className="border px-2 py-2 w-full" />
-                      <FaUserAlt className="absolute right-8 top-3" />
-                    </div>
-                    <div className="relative">
-                      <input type="text" placeholder="Your Email" className="border px-2 py-2 w-full" />
-                      <FaEnvelope className="absolute right-8 top-3" />
-
-                    </div>
-                    <div className="relative">
-                      <input type="text" placeholder="Phone Number" className="border px-2 py-2 w-full" />
-                      <FaEnvelope className="absolute right-8 top-3" />
-
-                    </div>
-                  </form>
+                <form action="" className="flex flex-col gap-4">
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder="Full Name"
+                      className="border px-2 py-2 w-full"
+                    />
+                    <FaUserAlt className="absolute right-8 top-3" />
+                  </div>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder="Your Email"
+                      className="border px-2 py-2 w-full"
+                    />
+                    <FaEnvelope className="absolute right-8 top-3" />
+                  </div>
+                  <div className="relative">
+                    <input
+                      type="text"
+                      placeholder="Phone Number"
+                      className="border px-2 py-2 w-full"
+                    />
+                    <FaPhone className="absolute right-8 top-3" />
+                  </div>
+                  <div className="relative">
+                    <textarea
+                      name=""
+                      id=""
+                      className="border min-h-[10rem] min-w-full"
+                    ></textarea>
+                    <GrEdit className="absolute right-8 top-3" />
+                  </div>
+                  <div>
+                    <button className="w-full bg-[#0284C7]  py-2 text-white font-bold rounded-lg">
+                      Send Now
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

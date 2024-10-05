@@ -188,8 +188,8 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div className=" bg-[#F8F9FA] space-y-5 text-black px-20 py-8 ">
-        <div className="grid grid-cols-2">
+      <div className=" bg-[#F8F9FA] space-y-5 text-black px-4 lg:px-20 py-8 ">
+        <div className="grid md:grid-cols-2">
           <div className="flex flex-col gap-4">
             <h4 className="text-2xl font-bold">
               Top App Development Companies
@@ -325,7 +325,10 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex  justify-between">
+
+
+        <div className="flex flex-col md:flex-row justify-between text-center">
+        <div className="h-40 w-40 bg-red-400 myanime"></div>
           <p>Copyright © 2017 Nx edge solutions.</p>
           <p>Made within ❤️ Chandigarh</p>
           <div className=" space-x-6">
