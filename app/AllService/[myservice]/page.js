@@ -5,6 +5,7 @@ import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaUserAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
 import {
   FaBrush,
@@ -3611,15 +3612,20 @@ export default function page({ params }) {
               </ul>
             </div>
             <div className="card1 px-4 shadow-lg rounded-sm py-5">
-              <h5 className="text-center text-2xl">Fill The Form</h5>
+              <h5 className="text-center text-2xl">Fill The paper</h5>
               <div className="formSection">
-                  <form action="">
+                  <form action="" className="flex flex-col gap-4">
                     <div className="relative">
                       <input type="text" placeholder="Full Name" className="border px-2 py-2 w-full" />
                       <FaUserAlt className="absolute right-8 top-3" />
                     </div>
                     <div className="relative">
                       <input type="text" placeholder="Your Email" className="border px-2 py-2 w-full" />
+                      <FaEnvelope className="absolute right-8 top-3" />
+
+                    </div>
+                    <div className="relative">
+                      <input type="text" placeholder="Phone Number" className="border px-2 py-2 w-full" />
                       <FaEnvelope className="absolute right-8 top-3" />
 
                     </div>
