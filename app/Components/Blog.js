@@ -9,6 +9,7 @@ const blogPosts = [
     description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     image: "/images/blog/blog2.webp",
     date: "24 JUL",
+    link:"/Blog/WebDevelopment"
   },
   {
     id: 2,
@@ -16,6 +17,8 @@ const blogPosts = [
     description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     image: "/images/blog/blog3.webp",
     date: "24 JUL",
+    link:"/Blog/PPCAdvertising"
+
   },
   {
     id: 3,
@@ -23,6 +26,7 @@ const blogPosts = [
     description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
     image: "/images/blog/blog1.webp",
     date: "24 JUL",
+    link:"/Blog/ResponsiveWebDesign"
   }
 ];
 
@@ -38,16 +42,17 @@ const Blog = () => {
       </div>
       <div className="mt-12 grid gap-10 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  mx-auto lg:max-w-none">
         {blogPosts.map((post) => (
+
           <div key={post.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="flex-shrink-0">
               <img className="h-48 w-full object-cover transition-transform duration-300 ease-in-out hover:scale-110" src={post.image} alt={post.title} />
             </div>
             <div className="flex-1 bg-white p-3 md:p-6 flex flex-col justify-between">
               <div className="flex-1">
-                <a href="#" className="block mt-2">
+                <div className="block mt-2">
                   <p className="text-xl font-semibold text-gray-900">{post.title}</p>
                   <p className="mt-3 text-base text-gray-500">{post.description}</p>
-                </a>
+                </div>
               </div>
               <div className="mt-6 flex items-center">
                 <div className="flex-shrink-0">
@@ -60,7 +65,7 @@ const Blog = () => {
                 </div>
               </div>
               <div className="mt-6">
-                <Link href="Blogdetails" className="text-base font-semibold text-[#0284c7] hover:text-[#0284c7]">
+                <Link href={post.link} className="text-base font-semibold text-[#0284c7] hover:text-[#0284c7]">
                   Read More &rarr;
                 </Link>
               </div>

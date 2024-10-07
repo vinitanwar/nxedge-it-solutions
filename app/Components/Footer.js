@@ -63,7 +63,7 @@ const Footer = () => {
   ];
   return (
     <>
-      <footer className="bg-gray-50 text- py-6 md:py-16 overflow-hidden">
+      <footer className="bg-gray-50 text- py-6 md:py-12 overflow-hidden">
         <div className="px-4 md:px-8 lg:px-20 py-4 md:py-4 ">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
@@ -188,17 +188,17 @@ const Footer = () => {
         </Link>
       </div>
 
-      <div className=" bg-[#F8F9FA] space-y-5 text-black px-4 lg:px-20 py-8 ">
+      <div className=" bg-[#F8F9FA] space-y-5 text-black px-4 lg:px-20 lg:py-10 md:py-5  ">
         <div className="grid md:grid-cols-2">
-          <div className="flex flex-col gap-4">
-            <h4 className="text-2xl font-bold">
+          <div className="flex flex-col gap-4 text-center md:text-start">
+            <h4 className="text-lg md:text-2xl font-bold">
               Top App Development Companies
             </h4>
             <p>
-              We design and develop custom mobile applicationsfor <br /> IOS, Android &
+              We design and develop custom mobile applicationsfor <br className="hidden md:block" /> IOS, Android &
               Hybrid platforms.
             </p>
-            <div class="flex items-center justify-start max-lg:justify-center gap-3">
+            <div class="flex items-center justify-start  gap-3 mb-4">
               <p class="font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text text-lg">
                 Follow Us:
               </p>
@@ -275,68 +275,64 @@ const Footer = () => {
                 </svg>
               </Link>
             </div>
+
           </div>
           <div>
-            <ul className="grid grid-cols-2 lg:grid-cols-4">
-              <li className="mx-2">
-                <a href="/">
-                  <img
-                    src="/images/bottomFooter1.webp"
-                    alt="badges"
-                    width={160}
-                    height={160}
-                    className="max-md:w-40"
-                  />
-                </a>
-              </li>
-              <li className="mx-2">
-                <a href="/">
-                  <img
-                    src="/images/bottomFooter2.webp"
-                    alt="badges"
-                    width={160}
-                    height={160}
-                    className="max-md:w-40"
-                  />
-                </a>
-              </li>
-              <li className="mx-2">
-                <a href="/">
-                  <img
-                    src="/images/bottomFooter3.webp"
-                    alt="badges"
-                    width={160}
-                    height={160}
-                    className="max-md:w-40"
-                  />
-                </a>
-              </li>
-              <li className="mx-2">
-                <a href="/">
-                  <img
-                    src="/images/bottomFooter4.webp"
-                    alt="badges"
-                    width={160}
-                    height={160}
-                    className="max-md:w-40"
-                  />
-                </a>
-              </li>
-            </ul>
+          <ul className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4">
+  <li className="mx-2">
+    <a href="/">
+      <img
+        src="/images/bottomFooter1.webp"
+        alt="badges"
+        className="w-32 sm:w-40 md:w-24 lg:w-32 xl:w-40 mx-auto"
+      />
+    </a>
+  </li>
+  <li className="mx-2">
+    <a href="/">
+      <img
+        src="/images/bottomFooter2.webp"
+        alt="badges"
+        className="w-32 sm:w-40 md:w-24 lg:w-32 xl:w-40 mx-auto"
+      />
+    </a>
+  </li>
+  <li className="mx-2">
+    <a href="/">
+      <img
+        src="/images/bottomFooter3.webp"
+        alt="badges"
+        className="w-32 sm:w-40 md:w-24 lg:w-32 xl:w-40 mx-auto"
+      />
+    </a>
+  </li>
+  <li className="mx-2">
+    <a href="/">
+      <img
+        src="/images/bottomFooter4.webp"
+        alt="badges"
+        width={160}
+        height={160}
+        className="w-32 sm:w-40 md:w-24 lg:w-32 xl:w-40 mx-auto"
+      />
+    </a>
+  </li>
+</ul>
+
           </div>
         </div>
+        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
+  <p>Copyright © 2017 Nx Edge Solutions.</p>
+  <p>Made within ❤️ Chandigarh</p>
+  <div className="space-x-0 md:space-x-6 flex-row space-y-4 md:space-y-0">
+    <span>Privacy & Policy</span>
+    <span>Faq</span>
+    <span>Terms</span>
+  </div>
+</div>
 
 
-        <div className="flex flex-col md:flex-row justify-between text-center">
-        <div className="h-40 w-40 bg-red-400 myanime"></div>
-          <p>Copyright © 2017 Nx edge solutions.</p>
-          <p>Made within ❤️ Chandigarh</p>
-          <div className=" space-x-6">
-            <span>Privacy & Policy</span>
-            <span>Faq.</span>
-            <span>Terms</span>
-          </div>
-        </div>
+     
       </div>
     </>
   );

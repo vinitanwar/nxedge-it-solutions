@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React,{useState} from "react";
 import Link from "next/link";
 
 // Import Swiper React components
@@ -88,6 +88,117 @@ import {
 
 export default function page({ params }) {
   const { myservice: particuluarService } = params;
+  const serviceMenu = [
+    {
+      servieName: " Website Design",
+      ChilService: [
+        {
+          name: "E-commerce Website Design",
+          link: "/AllService/EcoomWebsite",
+        },
+        {
+          name: "  Web-Application-development",
+          link: "/AllService/WebApplicationdevelopment",
+        },
+        {
+          name: "  CMS Web Development",
+          link: "/AllService/CMSWebDevelopment",
+        },
+        {
+          name: " Small Business Website",
+          link: "/AllService/businessdevelopement",
+        },
+        {
+          name: "  Coporate Website",
+          link: "/AllService/corporatewebsitedesign",
+        },
+      ],
+    },
+
+    {
+      servieName: "  Mobile and App Development",
+      ChilService: [
+        {
+          name: "  Android App Development",
+          link: "/AllService/androidapplicationdevelopment",
+        },
+        {
+          name: "   Ios App Development",
+          link: "/AllService/iosApplicationDevelopment",
+        },
+        {
+          name: "  Hybrid App  Development",
+          link: "/AllService/hybridapplicationdevelopment",
+        },
+        {
+          name: "  Mobile App Testing",
+          link: "/AllService/mobileapplicationtesting",
+        },
+        {
+          name: "  Quailty Assurance",
+          link: "/AllService/qualityAssurance",
+        },
+      ],
+    },
+    {
+      servieName: "  Digital Marketing ",
+      ChilService: [
+        {
+          name: "  Seo Services",
+          link: "/AllService/searchEngineOptimization",
+        },
+        {
+          name: "  PPC Management",
+          link: "/AllService/payPerClickService",
+        },
+        {
+          name: " Social Media Marketing (SMM)",
+          link: "/AllService/socialMediaMarketingService",
+        },
+        {
+          name: "  Local Seo Services",
+          link: "/AllService/localSeoServices",
+        },
+        {
+          name: " Content Marketing Services",
+          link: "/AllService/contentMarketingService",
+        },
+      ],
+    },
+    {
+      servieName: " Design & Branding",
+      ChilService: [
+        {
+          name: " Logo Design",
+          link: "/AllService/logoDesignService",
+        },
+        {
+          name: " Coporate Identity Design",
+          link: "/AllService/corporateStationeryDesign",
+        },
+        {
+          name: "  Brochure Design  ",
+          link: "/AllService/brochureDesignService",
+        },
+        {
+          name: " Animated Vidoes ",
+          link: "/AllService/animatedServices",
+        },
+        {
+          name: " Creative Agency",
+          link: "/AllService/creativeServices",
+        },
+      ],
+    },
+  ];
+
+  const [curentService,setCurentService]=useState(serviceMenu[0].servieName)
+  
+  const handleServiceClick = (serviceName) => {
+    setCurentService((prev) => (prev === serviceName ? "" : serviceName));
+  };
+
+
   const allData = {
     EcoomWebsite: {
       section1: {
@@ -3477,32 +3588,7 @@ export default function page({ params }) {
     },
   };
 
-  const serviceMenu = [
-    {
-      servieName: " E-commerce Website",
-      link: "/AllService/EcoomWebsite",
-    },
-    {
-      servieName: " Android App Development",
-      link: "/AllService/androidapplicationdevelopment",
-    },
-    {
-      servieName: "   Ios App Development",
-      link: "/AllService/iosApplicationDevelopment",
-    },
-    {
-      servieName: " Seo Services",
-      link: "/AllService/searchEngineOptimization",
-    },
-    {
-      servieName: " Content Marketing Services",
-      link: "/AllService/contentMarketingService",
-    },
-    {
-      servieName: " Coporate Identity Design",
-      link: "/AllService/corporateStationeryDesign",
-    },
-  ];
+
 
   const services = [
     {
@@ -3737,7 +3823,7 @@ export default function page({ params }) {
                       <h5 className="text-base sm:text-lg font-semibold tracking-wide">
                         GET SUPPORT FOR
                       </h5>
-                      <h3 className="text-3xl sm:text-5xl font-bold mt-2 sm:mt-0">
+                      <h3 className="text-xl sm:text-2xl font-bold mt-2 sm:mt-0">
                         90 DAYS
                       </h3>
                     </div>
@@ -3756,19 +3842,19 @@ export default function page({ params }) {
 
           <section className="CustomCms-website rounded-lg   bg-[#f2f2f2] py-5  px-5  md:px-8 lg:px-8 lg:py-14">
             <div className="space-y-5">
-            <h3 className="text-lg text-start md:text-xl lg:text-3xl text-[#050748] font-bold">
-              {allData[particuluarService].section4.heading}
-            </h3>
-            <p className="text-base text-start lg:text-lg text-[#6a6a8e]">
-              {allData[particuluarService].section4.para}
-            </p>
-            <div className="h-72  overflow-hidden">
-              <img
-                src={allData[particuluarService].section4.img}
-                alt="Ecommerce Image"
-                className="rounded-2xl h-[100%] w-full object-cover"
-              />
-            </div>
+              <h3 className="text-lg text-start md:text-xl lg:text-3xl text-[#050748] font-bold">
+                {allData[particuluarService].section4.heading}
+              </h3>
+              <p className="text-base text-start lg:text-lg text-[#6a6a8e]">
+                {allData[particuluarService].section4.para}
+              </p>
+              <div className="h-72  overflow-hidden">
+                <img
+                  src={allData[particuluarService].section4.img}
+                  alt="Ecommerce Image"
+                  className="rounded-2xl h-[100%] w-full object-cover"
+                />
+              </div>
             </div>
             <div className="flex flex-col items-center xl:flex-row  gap-10 mt-10">
               <div className="grid md:grid-cols-2 pt-4 lg:pt-10 gap-10 text-lg text-[#6a6a8e]">
@@ -3805,20 +3891,38 @@ export default function page({ params }) {
         {/* right side form and Link section */}
         <div className="lg:col-span-3">
           <div className="RightServiceCard space-y-8 sticky top-10">
-            <div className="card1 bg-slate-50 px-4 border  rounded-lg py-8">
+            <div className="card1 bg-gray-100 px-4 border  rounded-lg py-8">
               <h5 className="text-center text-2xl">Service Menu</h5>
-              <ul className="flex flex-col gap-4 text-lg">
-                {serviceMenu.map((elm) => (
-                  <Link href={elm.link} className={`cursor-pointer `}>
-                    <li className="border-b p-2 flex items-center justify-between">
-                      {elm.servieName}
-                      <IoIosArrowForward />
-                    </li>
+              <ul className="flex flex-col gap-3 text-lg">
+      {serviceMenu.map((elm) => (
+        <li key={elm.servieName} className="border-b p-2">
+          <button
+            onClick={() => handleServiceClick(elm.servieName)}
+            className="flex cursor-pointer items-center justify-between w-full text-left p-2 hover:bg-gray-200 transition"
+          >
+            {elm.servieName}
+            <IoIosArrowForward
+              className={`transition-transform ${
+                curentService === elm.servieName ? 'rotate-90' : ''
+              }`}
+            />
+          </button>
+          {curentService === elm.servieName && (
+            <ul className="flex flex-col gap-2 pl-4">
+              {elm.ChilService.map((child) => (
+                <li key={child.name}>
+                  <Link href={child.link}>
+                    <p className="text-[#0284C7] hover:underline">{child.name}</p>
                   </Link>
-                ))}
-              </ul>
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))}
+    </ul>
             </div>
-            <div className="card1 px-4  bg-slate-50 py-8 border rounded-lg">
+            <div className="card2 px-4  bg-slate-50 py-8 border rounded-lg">
               <h5 className="text-center text-2xl">Fill The Form</h5>
               <div className="formSection">
                 <form action="" className="flex flex-col gap-4">
