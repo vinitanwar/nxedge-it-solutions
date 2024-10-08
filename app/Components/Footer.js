@@ -69,7 +69,7 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="">
                 <img
-                  src="/imgs/logo.webp"
+                  src="/images/logo.webp"
                   alt="Blazity Logo"
                   className="h-6 lg:h-12 w-auto"
                 />
@@ -114,8 +114,10 @@ const Footer = () => {
             </div>
 
             <div className="space-y-2">
-              <h3 className="text-xl font-semibold" title="ss">Get in Touch</h3>
-              
+              <h3 className="text-xl font-semibold" title="ss">
+                Get in Touch
+              </h3>
+
               <ul className="flex flex-col gap-2 text-black">
                 <li className="flex items-center  text-sm pb-3">
                   <div className="flex  items-center">
@@ -195,8 +197,9 @@ const Footer = () => {
               Top App Development Companies
             </h4>
             <p>
-              We design and develop custom mobile applicationsfor <br className="hidden md:block" /> IOS, Android &
-              Hybrid platforms.
+              We design and develop custom mobile applicationsfor{" "}
+              <br className="hidden md:block" /> IOS, Android & Hybrid
+              platforms.
             </p>
             <div class="flex items-center justify-start  gap-3 mb-4">
               <p class="font-bold bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-transparent bg-clip-text text-lg">
@@ -275,64 +278,54 @@ const Footer = () => {
                 </svg>
               </Link>
             </div>
-
           </div>
           <div>
-          <ul className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-4">
-  <li className="mx-2">
-    <a href="/">
-      <img
-        src="/images/bottomFooter1.webp"
-        alt="badges"
-        className="w-32 sm:w-40 md:w-24 lg:w-32 xl:w-40 mx-auto"
-      />
-    </a>
-  </li>
-  <li className="mx-2">
-    <a href="/">
-      <img
-        src="/images/bottomFooter2.webp"
-        alt="badges"
-        className="w-32 sm:w-40 md:w-24 lg:w-32 xl:w-40 mx-auto"
-      />
-    </a>
-  </li>
-  <li className="mx-2">
-    <a href="/">
-      <img
-        src="/images/bottomFooter3.webp"
-        alt="badges"
-        className="w-32 sm:w-40 md:w-24 lg:w-32 xl:w-40 mx-auto"
-      />
-    </a>
-  </li>
-  <li className="mx-2">
-    <a href="/">
-      <img
-        src="/images/bottomFooter4.webp"
-        alt="badges"
-        width={160}
-        height={160}
-        className="w-32 sm:w-40 md:w-24 lg:w-32 xl:w-40 mx-auto"
-      />
-    </a>
-  </li>
-</ul>
-
+            <ul className="grid grid-cols-4 md:gap-4 md:grid-cols-2 lg:grid-cols-4">
+              <li className=" ">
+                <a href="/">
+                  <img
+                    src="/images/BATCHES/1FooterBatches.png"
+                    alt="badges"
+                  />
+                </a>
+              </li>
+              <li className="">
+                <a href="/">
+                  <img
+                    src="/images/BATCHES/2FooterBatches.png"
+                    alt="badges"
+                  />
+                </a>
+              </li>
+              <li className="">
+                <a href="/">
+                  <img
+                    src="/images/BATCHES/3FooterBatches.png"
+                    alt="badges"
+                  />
+                </a>
+              </li>
+              <li className="">
+                <a href="/">
+                  <img
+                    src="/images/BATCHES/4FooterBatches.png"
+                    alt="badges"
+                    
+                  />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
-  <p>Copyright © 2017 Nx Edge Solutions.</p>
-  <p>Made within ❤️ Chandigarh</p>
-  <div className="space-x-0 md:space-x-6 flex-row space-y-4 md:space-y-0">
-    <span>Privacy & Policy</span>
-    <span>Faq</span>
-    <span>Terms</span>
-  </div>
-</div>
-
-
-     
+          <p>Copyright © 2017 Nx Edge Solutions.</p>
+          <p>Made within ❤️ Chandigarh</p>
+          <div className="space-x-0 md:space-x-6 flex-row space-y-4 md:space-y-0">
+            <span>Privacy & Policy</span>
+            <span>Faq</span>
+            <span>Terms</span>
+          </div>
+        </div>
       </div>
     </>
   );

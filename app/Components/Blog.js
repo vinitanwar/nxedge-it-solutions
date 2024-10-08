@@ -41,9 +41,10 @@ const Blog = () => {
         expert advice that can help drive growth for your business.</p>
       </div>
       <div className="mt-12 grid gap-10 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  mx-auto lg:max-w-none">
-        {blogPosts.map((post) => (
+        {blogPosts.map((post,index) => (
 
-          <div key={post.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+        <Link key={index} href={post.link}>
+        <div key={post.id} className="flex flex-col rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
             <div className="flex-shrink-0">
               <img className="h-48 w-full object-cover transition-transform duration-300 ease-in-out hover:scale-110" src={post.image} alt={post.title} />
             </div>
@@ -71,6 +72,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
+        </Link>
         ))}
       </div>
     </div>

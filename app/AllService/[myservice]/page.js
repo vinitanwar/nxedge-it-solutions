@@ -85,6 +85,7 @@ import {
   FaImage,
   FaVideo,
 } from "react-icons/fa";
+import Counter from "@/app/Components/Counter";
 
 export default function page({ params }) {
   const { myservice: particuluarService } = params;
@@ -205,7 +206,7 @@ export default function page({ params }) {
         Breadcrumb: "ecommerce-website-development",
         heading: "Custom Web Design & Development Solutions",
         para: "Looking to grow your business by connecting with customers online? An eCommerce website is the perfect way to expand your customer base and boost sales. Whether you're launching your first online store or looking to improve an existing one, our expert team can deliver results-driven eCommerce design services. At Nx Edge Solutions we offer cutting-edge eCommerce web development with a sleek user interface, seamless payment gateway and shipping API integration, robust security features, and easy-to-manage product inventory. Trust our experienced developers for comprehensive eCommerce solutions that drive growth and success for your business.",
-        img: "/images/AllServiceImages/Ecoomerce.avif",
+        img: "/images/AllServiceImages/ecom1.jpg",
       },
       gallerySection: {
         title: "Website For Small Business & Startups",
@@ -248,6 +249,50 @@ export default function page({ params }) {
           ],
         },
       },
+      swiperdata : [
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/Eccom2.avif",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for SEO",
+          description:
+            "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+            image: "/images/AllServiceImages/ecom6.avif",
+            bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & SEO Integration",
+          description:
+            "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+            image: "/images/AllServiceImages/ecom3.avif",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for SEO",
+          description:
+            "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+            image: "/images/AllServiceImages/ecom7.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for SEO",
+          description:
+            "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+            image: "/images/AllServiceImages/ecom6.avif",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Optimization",
+          description:
+            "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+            image: "/images/AllServiceImages/ecom7.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "E-commerce Development",
@@ -354,7 +399,7 @@ export default function page({ params }) {
             icon: <FaLock className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/coporate.avif",
+        img: "/images/AllServiceImages/ecom8.webp",
         lastPara:
           "In today's digital landscape, a strong online presence is crucial for any business. Our corporate web development services are tailored to meet the unique needs of enterprises, ensuring that your website not only looks professional but also functions seamlessly. Our experienced developers utilize the latest technologies and best practices to create scalable, secure, and user-friendly web applications. Whether you're looking to revamp an existing site or build a new platform from scratch, our dedicated team is here to deliver high-quality solutions that align with your business goals while keeping your budget in mind.",
       },
@@ -365,7 +410,7 @@ export default function page({ params }) {
         Breadcrumb: "WEB APPLICATION DEVELOPMENT",
         heading: "Advanced Web Application Solutions",
         para: "Are you ready to elevate your business by engaging customers in the digital space? A well-designed eCommerce website can significantly enhance your reach and increase sales. Whether you're launching your first online store or seeking to optimize your current platform, our skilled team is dedicated to providing impactful eCommerce design solutions. At NS Edge Solutions, we specialize in advanced eCommerce web development, featuring intuitive user interfaces, seamless integration with payment gateways and shipping APIs, robust security measures, and easy product management tools. Rely on our seasoned developers to deliver tailored eCommerce solutions that foster business growth and success.",
-        img: "/images/AllServiceImages/WEBAPPLICATIONDEVELOPMENT.avif",
+        img: "/images/AllServiceImages/WebAppp1.avif",
       },
       gallerySection: {
         title: "Web Applications for Small Businesses & Startups",
@@ -425,6 +470,50 @@ export default function page({ params }) {
           ],
         },
       },
+      swiperdata : [
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/WebAppp1.avif",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for SEO",
+          description:
+            "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+            image: "/images/AllServiceImages/WebAppp2.jpeg",
+            bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & SEO Integration",
+          description:
+            "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+            image: "/images/AllServiceImages/WebAppp4.avif",
+            bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for SEO",
+          description:
+            "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+            image: "/images/AllServiceImages/WebAppp7.avif",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for SEO",
+          description:
+            "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+            image: "/images/AllServiceImages/WebAppp5.avif",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Optimization",
+          description:
+            "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+            image: "/images/AllServiceImages/WebAppp6.avif",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
 
       cards: [
         {
@@ -527,7 +616,7 @@ export default function page({ params }) {
             icon: <FaLock className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/coporate.avif",
+        img: "/images/AllServiceImages/WebAppp1.avif",
         lastPara:
           "In today's digital landscape, a strong online presence is crucial for any business. Our web application development services are tailored to meet the unique needs of enterprises, ensuring that your application not only looks professional but also functions seamlessly. Our experienced developers utilize the latest technologies and best practices to create scalable, secure, and user-friendly web applications. Whether you're looking to revamp an existing application or build a new platform from scratch, our dedicated team is here to deliver high-quality solutions that align with your business goals while keeping your budget in mind.",
       },
@@ -571,6 +660,50 @@ export default function page({ params }) {
           },
         ],
       },
+      swiperdata : [
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/WebAppp1.avif",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for SEO",
+          description:
+            "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+            image: "/images/AllServiceImages/WebAppp2.jpeg",
+            bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & SEO Integration",
+          description:
+            "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+            image: "/images/AllServiceImages/WebAppp4.avif",
+            bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for SEO",
+          description:
+            "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+            image: "/images/AllServiceImages/WebAppp7.avif",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for SEO",
+          description:
+            "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+            image: "/images/AllServiceImages/WebAppp5.avif",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Optimization",
+          description:
+            "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+            image: "/images/AllServiceImages/WebAppp6.avif",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
 
       Section2: {
         img: "/images/serviceSide.webp",
@@ -3590,55 +3723,11 @@ export default function page({ params }) {
 
 
 
-  const services = [
-    {
-      title: "SEO Strategy & Optimization",
-      description:
-        "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
-      image: "/images/services/img1.webp",
-      bgColor: "#2E4053", // Darker Blue Slate
-    },
-    {
-      title: "PPC Campaigns for SEO",
-      description:
-        "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
-      image: "/images/services/img2.webp",
-      bgColor: "#6C3483", // Vibrant Purple
-    },
-    {
-      title: "Social Media & SEO Integration",
-      description:
-        "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
-      image: "/images/services/img3.webp",
-      bgColor: "#1E8449", // Forest Green
-    },
-    {
-      title: "Web Design for SEO",
-      description:
-        "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
-      image: "/images/services/img5.webp",
-      bgColor: "#34495E", // Charcoal Blue
-    },
-    {
-      title: "Content Creation for SEO",
-      description:
-        "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
-      image: "/images/services/img6.webp",
-      bgColor: "#884EA0", // Dark Lavender
-    },
-    {
-      title: "Local SEO Optimization",
-      description:
-        "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
-      image: "/images/services/img7.webp",
-      bgColor: "#239B56", // Bold Green
-    },
-  ];
 
   return (
     <>
       {/* Banner section  */}
-      <section className="Banner firstSection flex flex-col lg:flex-row gap-10 items-center px-4 md:px-10 lg:px-20 lg:py-16 py-10 bg-gradient-to-b from-[#244e6d] to-[#102a44] text-white lg:rounded shadow-lg">
+      <section className="Banner firstSection flex flex-col lg:flex-row gap-10 items-center px-4 md:px-10 lg:px-20 lg:py-16 py-10 bg-gradient-to-b from-[#1C2F36] to-[#1C2F36] text-white lg:rounded shadow-lg">
         <div className="space-y-2 md:space-y-4 lg:space-y-8 flex-1">
           {/* Breadcrumb */}
           <nav className="text-sm text-gray-300">
@@ -3680,7 +3769,7 @@ export default function page({ params }) {
 
         <img
           src={allData[particuluarService].section1.img}
-          className="w-full max-w-[60%] lg:max-w-[30%] rounded xl:max-w-[20%] shadow-lg  mt-6 lg:mt-0"
+          className="w-full max-w-[60%] lg:max-w-[30%] rounded-full xl:max-w-[30%] shadow-lg  mt-6 lg:mt-0"
           alt="alter"
         />
       </section>
@@ -3730,7 +3819,7 @@ export default function page({ params }) {
                 modules={[Autoplay]}
                 className="mySwiper"
               >
-                {services.map((service, index) => (
+                {allData[particuluarService].swiperdata.map((service, index) => (
                   <SwiperSlide key={index}>
                     <div
                       className="boxCard border text-center p-2 h-[25rem] rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
@@ -3742,7 +3831,7 @@ export default function page({ params }) {
                         className="w-full h-40 object-cover rounded-md mb-4"
                       />
                       <h3 className="text-lg font-bold text-black mb-2 text-center">
-                        {service.title}
+                        {service.title} okkk
                       </h3>
                       <p className="text-base text-black leading-relaxed text-center ">
                         {service.description}
@@ -3763,7 +3852,7 @@ export default function page({ params }) {
                 return (
                   <>
                     <div className="Development-text">
-                      <div className="flex gap-3 items-center">
+                      <div className="flex flex-col lg:flex-row gap-3 items-center">
                         {elm.image && (
                           <img
                             src={elm.image}
@@ -3775,7 +3864,7 @@ export default function page({ params }) {
                           {elm.icon && elm.icon}{" "}
                         </div>
 
-                        <p className=" text-xl lg:text-lg text-[#e33f70]">
+                        <p className=" text-lg text-nowrap lg:text-lg text-[#e33f70]">
                           {elm.heading}
                         </p>
                       </div>
@@ -3829,7 +3918,7 @@ export default function page({ params }) {
                     </div>
                     <div className="mt-4 sm:mt-0">
                       <a href="/our-portfolio">
-                        <button className="bg-[#00a2ff] hover:bg-[#3b61e8] text-white font-semibold py-3 px-6 sm:px-8 rounded-md shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#00a2ff]/50">
+                        <button className="bg-[#00a2ff] text-sm hover:bg-[#3b61e8] text-white font-semibold py-3 px-6 sm:px-8 rounded-md shadow-lg transition-all transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-[#00a2ff]/50">
                           REQUEST A QUOTE
                         </button>
                       </a>
@@ -3892,7 +3981,7 @@ export default function page({ params }) {
         <div className="lg:col-span-3">
           <div className="RightServiceCard space-y-8 sticky top-10">
             <div className="card1 bg-gray-100 px-4 border  rounded-lg py-8">
-              <h5 className="text-center text-2xl">Service Menu</h5>
+              <h5 className="text-center  font-bold text-lg md:text-2xl">Service Menu</h5>
               <ul className="flex flex-col gap-3 text-lg">
       {serviceMenu.map((elm) => (
         <li key={elm.servieName} className="border-b p-2">
@@ -3969,6 +4058,8 @@ export default function page({ params }) {
           </div>
         </div>
       </div>
+
+      <Counter/>
     </>
   );
 }
