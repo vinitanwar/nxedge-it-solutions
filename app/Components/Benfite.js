@@ -6,32 +6,43 @@ const Benfite = () => {
         {
             category: 'Expert website design and development services to create visually stunning, user-friendly websites that drive business growth.',
             title: 'Website Design & Development',
-            imgSrc: "/images/services/websitedesgin.webp"
+            imgSrc: "/images/services/websitedesgin.webp",
+            link: "/AllService/WebApplicationdevelopment",
         },
         {
             category: 'Enhance your online presence with our expert SEO services, driving targeted traffic and boosting your search rankings.',
             title: 'SEO',
-            imgSrc: "/images/services/seo.webp"
+            imgSrc: "/images/services/seo.webp",
+            link: "/AllService/searchEngineOptimization",
+
         },
         {
             category: 'Boost your online visibility and drive targeted traffic with our expert PPC advertising services, tailored for results.',
             title: 'PPC Advertising',
-            imgSrc: "/images/services/ppc.webp"
+            imgSrc: "/images/services/ppc.webp",
+            link: "/AllService/CMSWebDevelopment",
+
         },
         {
             category: 'Boost your brand\'s online presence with targeted social media marketing strategies that engage and convert your audience effectively.',
             title: 'Social Media Marketing',
-            imgSrc: "/images/services/media.webp"
+            imgSrc: "/images/services/media.webp",
+            link: "/AllService/socialMediaMarketingService",
+
         },
         {
             category: 'Boost your brand visibility and engagement through strategic content marketing tailored to captivate and convert your audience.',
             title: 'Content Marketing',
-            imgSrc: "/images/services/content.webp"
+            imgSrc: "/images/services/content.webp",
+            link: "/AllService/contentMarketingService",
+
         },
         {
             category: 'Boost your business with targeted email campaigns that engage, convert, and drive customer loyalty effortlessly.',
             title: 'Email Marketing',
-            imgSrc: "/images/services/email.webp"
+            imgSrc: "/images/services/email.webp",
+            link: "/AllService/contentMarketingService",
+
         },
     ];
 
@@ -60,7 +71,7 @@ const Benfite = () => {
                                         {project.title}
                                     </h4>
                                     <span className="text-white text-center text-sm md:text-base">{project.category}</span>
-                                    <Link href="/service" className="mt-4 text-white font-semibold underline text-sm md:text-base">
+                                    <Link href={project.link} className="mt-4 text-white font-semibold underline text-sm md:text-base">
                                         Learn More
                                     </Link>
                                 </div>

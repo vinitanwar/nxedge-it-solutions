@@ -20,6 +20,7 @@ const Navbar = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openSection, setOpenSection] = useState(null);
+  const [navActive,setNavActive]=useState("/")
 
   const [mobileServiceOpen, setMobileServiceOpen] = useState(false);
   const handleDropdownToggle = (section) => {
@@ -27,6 +28,7 @@ const Navbar = () => {
   };
 
 
+  console.log(navActive)
 
   
   return (
@@ -366,28 +368,33 @@ const Navbar = () => {
         {/* Navigation Links for Desktop */}
         <ul className="hidden lg:flex md:gap-12 list-none">
           <li>
-            <Link href="/">
-              <p className="text-black hover:text-gray-800">Home</p>
+            <Link href="/" onClick={()=>setNavActive("/")}>
+              <p className={`${navActive=="/"&&"font-bold text-sky-800"} text-black hover:text-gray-800`}>Home</p>
             </Link>
           </li>
           <li>
-            <Link href="/about">
-              <p className="text-black hover:text-gray-800">About Us</p>
+            <Link href="/about" onClick={()=>setNavActive("/about")}>
+            <p className={`${navActive=="/about"&&"font-bold text-sky-800"} text-black hover:text-gray-800`}>About Us</p>
+
+              {/* <p className="text-black hover:text-gray-800"></p> */}
             </Link>
           </li>
           <li className="group" onMouseEnter={() => setIsDropdownVisible(true)}>
-            <p className="text-black hover:text-gray-800 cursor-pointer">
+            <p className="text-black hover:text-gray-800 cursor-pointer flex items-center gap-2">
               Services
+              <IoIosArrowDown className={!isDropdownVisible&&"rotate-180"}/>
             </p>
           </li>
           <li>
-            <Link href="/Blog">
-              <p className="text-black hover:text-gray-800">Blog</p>
+            <Link href="/Blog" onClick={()=>setNavActive("/Blog")}>
+            <p className={`${navActive=="/Blog"&&"font-bold text-sky-800 "} text-black hover:text-gray-800`}>Blog</p>
+
             </Link>
           </li>
           <li>
-            <Link href="/Contact">
-              <p className="text-black hover:text-gray-800">Contact Us</p>
+            <Link href="/Contact" onClick={()=>setNavActive("/Contact")}>
+              <p className={`${navActive=="/Contact"&&"font-bold text-sky-800"} text-black hover:text-gray-800`}>Contact Us</p>
+
             </Link>
           </li>
           {isDropdownVisible && (

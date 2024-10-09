@@ -120,30 +120,46 @@ const Footer = () => {
 
               <ul className="flex flex-col gap-2 text-black">
                 <li className="flex items-center  text-sm pb-3">
-                  <div className="flex  items-center">
+                  <div className="flex  items-start">
                     <IoLocation className="mr-2 text-[#333]" />
-                    <h4>Address</h4>
+                    <h4>1400 Avery Ranch Blvd, Ste
+                          C200
+                          Austin,Texas-78717
+                         </h4>
                   </div>
                   <p></p>
                 </li>
                 <li className="flex items-center  text-sm pb-3">
                   <FaPhoneAlt className="mr-2 text-[#333]" />
-                  <span className="text-black">+91-512-640-6568</span>
+                  {/* <span className="text-black">+91-512-640-6568</span> */}
+                  <a href="tel:+91--512-640-6568">
+                          +91-512-640-6568
+                        </a>
                 </li>
                 <li className="flex items-center  text-sm ">
                   <FaEnvelope className="mr-2 text-[#333]" />
-                  <span className="text-black">timesheet@nxedgesol.com</span>
+                  <span className="text-black">
+                  <a href="mailto: hiring@nxedgesol.com">
+                          hiring@nxedgesol.com
+                        </a>
+                  </span>
                 </li>
                 <li className="flex items-center  text-sm ">
-                  <FaFacebook className="mr-2 text-[#333]" />
-                  <span>www.faceBook.com</span>
+                  <FaEnvelope className="mr-2 text-[#333]" />
+                  <span className="text-black">
+                  <a href="mailto: timesheet@nxedgesol.com">
+                          timesheet@nxedgesol.com
+                        </a>
+                  </span>
                 </li>
-                <Link href="https://www.linkedin.com/company/nxedge-solutions/">
-                  <li className="flex items-center  text-sm ">
-                    <FaLinkedin className="mr-2 text-[#333]" />
-                    <span>www.Linkdin.com</span>
-                  </li>
-                </Link>
+                <li className="flex items-center  text-sm ">
+                  <FaEnvelope className="mr-2 text-[#333]" />
+                  <span className="text-black">
+                  <a href="mailto: invoice@nxedgesol.com">
+                          invoice@nxedgesol.com
+                        </a>
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
@@ -322,8 +338,8 @@ const Footer = () => {
           <p>Made within ❤️ Chandigarh</p>
           <div className="space-x-0 md:space-x-6 flex-row space-y-4 md:space-y-0">
             <span>Privacy & Policy</span>
-            <span>Faq</span>
-            <span>Terms</span>
+            {/* <span>Faq</span> */}
+            <span>Terms & Condition</span>
           </div>
         </div>
       </div>

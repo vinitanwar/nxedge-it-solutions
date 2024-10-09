@@ -81,7 +81,7 @@ const Testimonials = () => {
     <section className='test-main'>
 
   
-    <div className='max-w-7xl mx-auto  px-4 md:px-8 lg:px-20 py-4 md:py-8  space-y-5 lg:space-y-0 overflow-hidden'>
+    <div className='max-w-8xl mx-auto  px-4 md:px-8 lg:px-20 py-4 md:py-8  space-y-5 lg:space-y-0 overflow-hidden'>
       <h2 className='text-xl md:text-2xl lg:text-3xl font-extrabold text-center lg:my-5 '>What Our Clients Say</h2>
       <Slider {...settings}>
         {testimonialsData.map((testimonial, index) => (

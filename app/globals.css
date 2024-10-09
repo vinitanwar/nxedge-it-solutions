@@ -4,6 +4,7 @@
 
 body{  
   font-family: "Lexend"!important;
+  scroll-behavior: smooth;
 }
 
 .hero::before {

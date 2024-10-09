@@ -253,7 +253,7 @@ const AllData = {
         postedDate: "Sept 24,2024",
         technology: "PPC Optimization",
         image: "/images/blog/ppc2.avif",
-        link: "PPCAdvertisingPPCCampaignOptimization ",
+        link: "PPCAdvertisingPPCCampaignOptimization",
       },
       {
         title: "Understanding Google Ads",
