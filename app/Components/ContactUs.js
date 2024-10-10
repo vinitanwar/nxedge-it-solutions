@@ -1,140 +1,287 @@
-import Link from 'next/link';
-import React from 'react';
+"use client";
+import Link from "next/link";
+import React, { useState,useEffect } from "react";
+import Image from "next/image";
 
+
+import Swal from 'sweetalert2'
 const ContactUs = () => {
-  const contacts = [
-    {
-      country: 'India',
-      office: 'Registered Office',
-      address: '1400 Avery Ranch Blvd, Ste C200 Austin,Texas-78717',
-      email: 'timesheet@nxedgesol.com',
-      phone: '+91-512-640-6568',
-      image: '/images/itly.webp',
-    },
-    {
-      country: 'Italy',
-      office: 'Registered Office',
-      address: '1400 Avery Ranch Blvd, Ste C200 Austin,Texas-78717',
-      email: 'invoice@nxedgesol.com',
-      phone: '+91-512-640-6568',
-      image: '/images/india.webp',
-    },
-    {
-      country: 'United States',
-      office: 'Registered Office',
-      address: '1400 Avery Ranch Blvd, Ste C200 Austin,Texas-78717',
-      email: 'hiring@nxedgesol.com',
-      phone: '+91-512-640-6568',
-      image: '/images/usa.webp',
-    },
-  ];
+  // const contacts = [
+  //   {
+  //     country: 'India',
+  //     office: 'Registered Office',
+  //     address: '1400 Avery Ranch Blvd, Ste C200 Austin, Texas-78717',
+  //     email: 'timesheet@nxedgesol.com',
+  //     phone: '+91-512-640-6568',
+  //     image: '/images/india.webp',
+  //   },
+  //   {
+  //     country: 'Italy',
+  //     office: 'Registered Office',
+  //     address: '1400 Avery Ranch Blvd, Ste C200 Austin, Texas-78717',
+  //     email: 'invoice@nxedgesol.com',
+  //     phone: '+91-512-640-6568',
+  //     image: '/images/italy.webp',
+  //   },
+  //   {
+  //     country: 'United States',
+  //     office: 'Registered Office',
+  //     address: '1400 Avery Ranch Blvd, Ste C200 Austin, Texas-78717',
+  //     email: 'hiring@nxedgesol.com',
+  //     phone: '+91-512-640-6568',
+  //     image: '/images/usa.webp',
+  //   },
+  // ];
 
+  const [formSubimitAlert, setFormSubmitAlert] = useState(false);
+  const [formLoader,setFormLoader]=useState(false)
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    course: "",
+    message: "",
+    userEmail: "shubham.developerr@gmail.com",
+  });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+  console.log(formData);
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const url = "https://sendingmail-6znv.onrender.com/sendmail"; // Replace with your actual API endpoint
+    const data = new URLSearchParams();
+
+    // Use the formData values instead of hardcoded values
+    data.append("S_name", formData.name);
+    data.append("S_phone", formData.phone);
+    data.append("message", formData.message);
+    data.append("S_email", formData.email);
+    data.append("userEmailsir", formData.userEmail);
+    data.append("S_services", formData.course);
+
+    console.log("wrggf", data);
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded", // URL-encoded form data
+        },
+        body: data.toString(), // Send the URL-encoded string
+      });
+    
+
+      Swal.fire({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success"
+      })
+
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log("Success:", result);
+      } else {
+        console.error("Error:", response.statusText); // Handle error
+      }
+    } catch (error) {
+      console.error("Network error:", error); // Handle network error
+    }
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      course: "",
+      message: "",
+      userEmail: "shubham.developerr@gmail.com",
+    });
+
+
+    setFormLoader(true);
+  };
+
+  // useEffect(()=>{
+  //  const altertMssg= setTimeout(() => {
+  //     setFormSubmitAlert(false)
+  //   },2000);
+  //   const loader=setTimeout(() => {
+  //     setFormLoader(false)
+  //   }, 1000);
+  //   return ()=>clearTimeout(altertMssg,loader)
+  // })
   return (
     <>
-      <section className="lg:py-16 px-5 md:px-12 lg:px-20 bg-gradient-to-b from-white to-gray-100 overflow-hidden">
-        <div className="container mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            {/* Contact Info */}
-            <div className="lg:col-span-6 bg-gradient-to-r py-8 px-5 lg:p-8 shadow-xl rounded-lg relative">
-              <h3 className="text-lg md:text-2xl lg:text-3xl font-bold mb-6 text-black">Contact Info</h3>
-              <p className="mb-6 text-gray-800 text-sm md:text-base">
-                We're here to help! If you have any questions or would like to discuss how our SEO and digital marketing services can benefit your business, reach out below.
-              </p>
-              <ul className="space-y-8">
-                <li className="flex items-center lg:items-start space-x-4">
-                  <img src='/images/location.webp' className="animate-bounce w-10 h-10" />
-                  <div>
-                    <h5 className="text-base lg:text-lg font-semibold text-black">Address</h5>
-                    <p className="text-sm lg:text-base text-gray-800">1400 Avery Ranch Blvd, Ste C200 Austin,Texas-78717</p>
-                  </div>
-                </li>
-                <li className="flex items-center lg:items-start space-x-4">
-                  <img src='/images/mail.webp' className="animate-bounce w-10 h-10" />
-                  <div>
-                    <h5 className="text-base lg:text-lg font-semibold text-black">Email</h5>
-                    <p className="text-sm lg:text-base text-gray-800">
-                      <a href="mailto:hiring@nxedgesol.com" className="text-sky-600 hover:text-sky-800 hover:underline">hiring@nxedgesol.com</a>
-                    </p>
-                  </div>
-                </li>
-                <li className="flex items-center lg:items-start space-x-4">
-                  <img src='/images/phone-call.webp' className="animate-bounce w-10 h-10" />
-                  <div>
-                    <h5 className="text-base lg:text-lg font-semibold text-black">Phone</h5>
-                    <p className="text-sm lg:text-base text-gray-800">
-                      <a href="tel:+91-512-640-6568" className="text-sky-600 hover:text-sky-800 hover:underline">+91-512-640-6568</a>
-                    </p>
-                  </div>
-                </li>
-              </ul>
-              <div className="absolute inset-0 opacity-10 pointer-events-none">
-                <img src="/images/contact-bg.svg" className="w-full h-full object-cover" alt="Background" />
-              </div>
+      <div className="mx-8 lg:mx-32 my-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-white text-center border-2 py-10 shadow-lg">
+            <div className="flex items-center mb-4">
+              <Image
+                src="/images/email.webp"
+                alt="Email Icon"
+                width={70}
+                height={70}
+                className="mx-auto"
+              />
             </div>
+            <h3 className="text-xl font-bold my-3">Email Address</h3>
+            <p>
+              <a href="mailto:info@webmail.com">info@webmail.com</a> <br />
+              <a href="mailto:jobs@webexample.com">jobs@webexample.com</a>
+            </p>
+          </div>
 
-            {/* Contact Form */}
-            <div className="lg:col-span-6 bg-white p-6 md:p-8 shadow-xl rounded-lg">
+          <div className="bg-white text-center border-2 py-10 shadow-lg">
+            <div className="flex items-center mb-4">
+              <Image
+                src="/images/phone.webp"
+                alt="Phone Icon"
+                width={70}
+                height={70}
+                className="mx-auto"
+              />
+            </div>
+            <h3 className="text-xl font-bold my-3">Phone Number</h3>
+            <p>
+              +0123-456789 <br />
+              +987-6543210
+            </p>
+          </div>
+
+          <div className="bg-white text-center border-2 py-10 shadow-lg">
+            <div className="flex items-center mb-4">
+              <Image
+                src="/images/map.webp"
+                alt="Office Icon"
+                width={70}
+                height={70}
+                className="mx-auto"
+              />
+            </div>
+            <h3 className="text-xl font-bold my-3">Office Address</h3>
+            <p>
+              CWEP0205, Compass Building, Al Shohada Road,
+              <br /> Al Hamra Industrial Zone-FZ, Ras Al Khaimah, <br /> United
+              Arab Emirates
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section className="py-16 sm:pb-8 lg:px-32 bg-white">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 h-full">
+            <section className="lg:col-span-6 flex justify-center items-center p-4 h-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3438.254660711403!2d-97.81051952463716!3d30.485542674704366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b2d676a4f8fbb%3A0xe30c779f09a81ffc!2s1400%20Avery%20Ranch%20Blvd%20c200%2C%20Cedar%20Park%2C%20TX%2078613%2C%20USA!5e0!3m2!1sen!2sin!4v1728540444926!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              ></iframe>
+            </section>
+
+            <div className="lg:col-span-6 bg-white p-8 shadow-lg rounded-lg flex flex-col h-full">
               <div className="mb-6">
-                <h4 className="text-lg md:text-2xl font-bold text-gray-800">Get In Touch</h4>
-                <p className="text-gray-600 text-sm md:text-base mt-4">
-                  Feel free to reach out to us with your inquiries or requests. We're ready to assist you!
+                <h4 className="text-xl font-semibold text-gray-800">
+                  Get In Touch
+                  
+                </h4>
+                <p className="text-gray-600 mt-4">
+                  We're here to help! If you have any questions or would like to
+                  discuss how our services can benefit your business,
                 </p>
               </div>
-              <form id="contact-form" method="POST" action="" className="space-y-6">
+              <form
+                id="contact-form"
+                method="POST"
+                onSubmit={handleSubmit}
+                className="space-y-6 flex-grow"
+              >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <input type="text" name="contact-name" id="contact-name" placeholder="Your name" className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-300 focus:outline-none text-sm md:text-base" />
-                  <input type="email" name="contact-email" id="contact-email" placeholder="Your email" className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-300 focus:outline-none text-sm md:text-base" />
-                  <input type="tel" name="contact-phone" id="contact-phone" placeholder="Phone number" className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-300 focus:outline-none text-sm md:text-base" />
-                  <select name="course" id="course-select" className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-300 focus:outline-none text-sm md:text-base">
-                    <option value="services">Select Service</option>
-                    <option value="gnm">Germany</option>
+                  <input
+                    type="text"
+                    name="name"
+                    id="contact-name"
+                    placeholder="Your name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    id="contact-email"
+                    placeholder="Enter your email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
+                    required
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="contact-phone"
+                    placeholder="Phone number"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
+                    required
+                  />
+                  <select
+                    name="course"
+                    id="course-select"
+                    value={formData.course}
+                    onChange={handleChange}
+                    className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
+                  >
+                    <option value="services">Services</option>
+                    <option value="WebSite-Design">WebSite Design</option>
+                    <option value="mobile-app-development">
+                      Mobile App & Development
+                    </option>
+                    <option value="digital-marketing">Digital Marketing</option>
+                    <option value="seo">Design & Branding</option>
                   </select>
                 </div>
-                <textarea name="contact-message" id="contact-message" cols="30" rows="4" placeholder="Your message" className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-300 focus:outline-none text-sm md:text-base"></textarea>
-                <button type="submit" className="w-full bg-sky-600 text-white p-3 rounded-lg font-bold hover:bg-sky-700 transition-all duration-300">
+                <textarea
+                  name="message"
+                  id="contact-message"
+                  cols="30"
+                  rows="4"
+                  placeholder="Your message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
+                  required
+                ></textarea>
+                {formSubimitAlert && <div className="bg-sky-100 py-4 px-10 rounded-xl space-y-2">
+                 
+                  <p className="text-xs"> Your message has been sent.Thank you!</p>
+                  
+                </div>}
+              {formLoader&& <div className="flex justify-start items-center px-10">
+             <div className="animate-spin rounded-full h-8 w-8 border-t-4 border-b-4 border-blue-500"></div>
+            </div>} 
+
+                <button
+                  type="submit"
+                  className="w-full bg-sky-600 text-white p-3 rounded-lg font-bold hover:bg-sky-700 transition-all duration-300"
+                >
                   Send Message
                 </button>
               </form>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Contact Cards */}
-      <div className="py-12 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-            {contacts.map((contact, index) => (
-              <div
-                key={index}
-                className="max-w-sm mx-auto bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105 hover:shadow-xl"
-              >
-                <img className="w-full h-48 object-cover" src={contact.image} alt={`${contact.country} image`} />
-                <div className="p-6">
-                  <h2 className="text-lg md:text-xl font-semibold text-gray-800 mb-2">{contact.country}</h2>
-                  <p className="text-sm md:text-base text-gray-600 mb-2">{contact.office}</p>
-                  <p className="text-sm md:text-base text-gray-700 mb-2">{contact.address}</p>
-                  <p className="text-sm md:text-base text-gray-700 mb-2">{contact.email}</p>
-                  <p className="text-sm md:text-base text-gray-700">{contact.phone}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Google Map */}
-      <section className="flex justify-center items-center p-4">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29250838.18065772!2d61.0245165611659!3d19.69009515037612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e1!3m2!1sen!2sin!4v1724756841187!5m2!1sen!2sin"
-          width="100%"
-          height="500"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          className="w-full h-96"
-        ></iframe>
       </section>
     </>
   );

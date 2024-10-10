@@ -167,7 +167,7 @@ const Footer = () => {
       </footer>
 
       <div className="main-icon-wstp ">
-        <Link href="tel:(778) 669-1725">
+        <Link href="tel:+91-512-640-6568">
           <button class="buttons">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -267,7 +267,7 @@ const Footer = () => {
               </Link>
 
               <a
-                href="https://www.youtube.com/channel/UCirWettrTWfsFRzdGRIc6BQ/about"
+                href="https://www.youtube.com"
                 target="_blank"
               >
                 <svg
@@ -334,12 +334,17 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
-          <p>Copyright © 2017 Nx Edge Solutions.</p>
+          <p>© 2024 Copyright: Nxedgesol. All rights reserved
+          .</p>
           <p>Made within ❤️ Chandigarh</p>
           <div className="space-x-0 md:space-x-6 flex-row space-y-4 md:space-y-0">
-            <span>Privacy & Policy</span>
-            {/* <span>Faq</span> */}
+            <Link href="/PrivacyAndPolicy">
+            <span>Privacy  Policy</span>
+            </Link>
+           
+            <Link href="/Terms&Condition">
             <span>Terms & Condition</span>
+            </Link>
           </div>
         </div>
       </div>

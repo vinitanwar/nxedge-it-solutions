@@ -612,21 +612,3 @@ h4.title.text-white {
   }
  
 }
-
-/* Custom scrollbar for the single blog section */
-.single-blog-section::-webkit-scrollbar {
-  width: 8px;
-}
-
-.single-blog-section::-webkit-scrollbar-track {
-  background-color: #f1f1f1;
-}
-
-.single-blog-section::-webkit-scrollbar-thumb {
-  background-color: #0284C7;
-  border-radius: 4px;
-}
-
-.single-blog-section::-webkit-scrollbar-thumb:hover {
-  background-color: #0369A1;
-}

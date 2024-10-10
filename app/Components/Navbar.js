@@ -382,7 +382,7 @@ const Navbar = () => {
           <li className="group" onMouseEnter={() => setIsDropdownVisible(true)}>
             <p className="text-black hover:text-gray-800 cursor-pointer flex items-center gap-2">
               Services
-              <IoIosArrowDown className={!isDropdownVisible&&"rotate-180"}/>
+              <IoIosArrowDown className={isDropdownVisible&&"rotate-180"}/>
             </p>
           </li>
           <li>
