@@ -56,10 +56,10 @@ const Footer = () => {
       heading: "Web-Application-development ",
       link: "/AllService/WebApplicationdevelopment",
     },
-    {
-      heading: "  Ios App Development ",
-      link: "/AllService/iosApplicationDevelopment",
-    },
+    // {
+    //   heading: "  Ios App Development ",
+    //   link: "/AllService/iosApplicationDevelopment",
+    // },
   ];
   return (
     <>
@@ -336,7 +336,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-4 md:space-y-0">
           <p>© 2024 Copyright: Nxedgesol. All rights reserved
           .</p>
-          <p>Made within ❤️ Chandigarh</p>
+          <p>Made within ❤️ Texas</p>
           <div className="space-x-0 md:space-x-6 flex-row space-y-4 md:space-y-0">
             <Link href="/PrivacyAndPolicy">
             <span>Privacy  Policy</span>

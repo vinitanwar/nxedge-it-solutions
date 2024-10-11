@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Link from "next/link";
 const Banner = () => {
   return (
     <section className="banner-main relative overflow-hidden bg-gradient-to-b from-[#244e6d] to-[#102a44] pt-4 md:pt-0  md:pb-10">
@@ -20,19 +20,19 @@ const Banner = () => {
             expert SEO and digital marketing solutions.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a
-              href="contact.html"
+            <Link
+              href="/AllService/searchEngineOptimization"
               className="text-white bg-sky-500 px-5 py-3 rounded-full shadow-lg hover:bg-sky-600 transition-transform transform hover:scale-105 text-xs sm:text-sm"
             >
               Start Ranking Now <i className="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-            <a
-              href="contact.html"
+            </Link>
+            <Link
+              href="/Contact"
               className="text-sky-600 bg-transparent px-5 py-3 rounded-full border border-sky-600 shadow-lg hover:bg-sky-100 transition-transform transform hover:scale-105 text-xs sm:text-sm"
             >
               Contact Now{" "}
               <i className="fa-solid hidden fa-arrow-right ml-2"></i>
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -409,7 +409,7 @@ const Navbar = () => {
 
                 </h2>
                 <Link href="/AllService/EcoomWebsite">
-                <div className="dropdown-item flex items-center p-2 cursor-pointer font-medium  hover:font-extrabold rounded-lg border-b transition duration-300 mb-3">
+                <div className="dropdown-item  flex items-center p-2 cursor-pointer font-medium  hover:font-extrabold rounded-lg border-b transition duration-300 mb-3">
 
                   <span className="text-black ">
                   E-commerce Website

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Swal from 'sweetalert2'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -205,7 +206,7 @@ export default function page({ params }) {
         Breadcrumb: "ecommerce-website-development",
         heading: "Custom Web Design & Development Solutions",
         para: "Looking to grow your business by connecting with customers online? An eCommerce website is the perfect way to expand your customer base and boost sales. Whether you're launching your first online store or looking to improve an existing one, our expert team can deliver results-driven eCommerce design services. At Nx Edge Solutions we offer cutting-edge eCommerce web development with a sleek user interface, seamless payment gateway and shipping API integration, robust security features, and easy-to-manage product inventory. Trust our experienced developers for comprehensive eCommerce solutions that drive growth and success for your business.",
-        img: "/images/AllServiceImages/ecom1.jpg",
+        img: "/images/AllServiceImages/ecom1.webp",
       },
       gallerySection: {
         title: "Website For Small Business & Startups",
@@ -215,10 +216,10 @@ export default function page({ params }) {
           "At NX edge Solutions, we prioritize delivering SEO-friendly websites for broader visibility and optimal ROI. Our responsive design ensures an exceptional viewing experience across all mobile devices. Additionally, we seamlessly integrate your website with various social media platforms to further strengthen your brand identity. Let us help your business evolve into a well-recognized brand with our comprehensive small business web design services.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Design 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Design 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Design 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Design 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Design 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Design 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Design 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Design 4" },
         ],
       },
       Section2: {
@@ -248,51 +249,50 @@ export default function page({ params }) {
           ],
         },
       },
-     swiperdata: [
-  {
-    title: "E-commerce SEO Strategy & Optimization",
-    description:
-      "Develop an effective SEO strategy for your e-commerce site, optimizing product pages and improving visibility for long-term traffic growth.",
-    image: "/images/AllServiceImages/Eccom2.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for E-commerce",
-    description:
-      "Utilize targeted PPC campaigns to drive traffic to your e-commerce website, boosting sales and increasing overall site authority.",
-    image: "/images/AllServiceImages/ecom6.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media Strategies for E-commerce",
-    description:
-      "Enhance your e-commerce site's visibility by integrating social media strategies that drive engagement and increase conversions.",
-    image: "/images/AllServiceImages/ecom3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Responsive Web Design for E-commerce",
-    description:
-      "Create a responsive and user-friendly design for your e-commerce website, ensuring a seamless shopping experience on all devices.",
-    image: "/images/AllServiceImages/ecom7.webp",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Creation for E-commerce Sites",
-    description:
-      "Produce high-quality, SEO-optimized content for your e-commerce platform, focusing on product descriptions that drive traffic and sales.",
-    image: "/images/AllServiceImages/ecom6.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO for E-commerce",
-    description:
-      "Optimize your e-commerce website for local searches to attract nearby customers and improve your Google My Business listings.",
-    image: "/images/AllServiceImages/ecom7.webp",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "E-commerce SEO Strategy & Optimization",
+          description:
+            "Develop an effective SEO strategy for your e-commerce site, optimizing product pages and improving visibility for long-term traffic growth.",
+          image: "/images/AllServiceImages/Eccom2.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for E-commerce",
+          description:
+            "Utilize targeted PPC campaigns to drive traffic to your e-commerce website, boosting sales and increasing overall site authority.",
+          image: "/images/AllServiceImages/ecom6.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media Strategies for E-commerce",
+          description:
+            "Enhance your e-commerce site's visibility by integrating social media strategies that drive engagement and increase conversions.",
+          image: "/images/AllServiceImages/ecom3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Responsive Web Design for E-commerce",
+          description:
+            "Create a responsive and user-friendly design for your e-commerce website, ensuring a seamless shopping experience on all devices.",
+          image: "/images/AllServiceImages/ecom1.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for E-commerce Sites",
+          description:
+            "Produce high-quality, SEO-optimized content for your e-commerce platform, focusing on product descriptions that drive traffic and sales.",
+          image: "/images/AllServiceImages/ecom6.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO for E-commerce",
+          description:
+            "Optimize your e-commerce website for local searches to attract nearby customers and improve your Google My Business listings.",
+          image: "/images/AllServiceImages/socialMediaMarketingService2.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "E-commerce Development",
@@ -399,7 +399,7 @@ export default function page({ params }) {
             icon: <FaLock className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/ecom8.webp",
+        img: "/images/AllServiceImages/ecom6.webp",
         lastPara:
           "In today's digital landscape, a strong online presence is crucial for any business. Our corporate web development services are tailored to meet the unique needs of enterprises, ensuring that your website not only looks professional but also functions seamlessly. Our experienced developers utilize the latest technologies and best practices to create scalable, secure, and user-friendly web applications. Whether you're looking to revamp an existing site or build a new platform from scratch, our dedicated team is here to deliver high-quality solutions that align with your business goals while keeping your budget in mind.",
       },
@@ -410,7 +410,7 @@ export default function page({ params }) {
         Breadcrumb: "WEB APPLICATION DEVELOPMENT",
         heading: "Advanced Web Application Solutions",
         para: "Are you ready to elevate your business by engaging customers in the digital space? A well-designed eCommerce website can significantly enhance your reach and increase sales. Whether you're launching your first online store or seeking to optimize your current platform, our skilled team is dedicated to providing impactful eCommerce design solutions. At NS Edge Solutions, we specialize in advanced eCommerce web development, featuring intuitive user interfaces, seamless integration with payment gateways and shipping APIs, robust security measures, and easy product management tools. Rely on our seasoned developers to deliver tailored eCommerce solutions that foster business growth and success.",
-        img: "/images/AllServiceImages/WebAppp1.avif",
+        img: "/images/AllServiceImages/WebAppp1.webp",
       },
       gallerySection: {
         title: "Web Applications for Small Businesses & Startups",
@@ -422,22 +422,22 @@ export default function page({ params }) {
         images: [
           {
             id: 1,
-            src: "/images/AllServiceImages/webapp1.avif",
+            src: "/images/AllServiceImages/webapp1.webp",
             alt: "Web App Design 1",
           },
           {
             id: 2,
-            src: "/images/AllServiceImages/webapp2.avif",
+            src: "/images/AllServiceImages/webapp2.webp",
             alt: "Web App Design 2",
           },
           {
             id: 3,
-            src: "/images/AllServiceImages/webapp2.avif",
+            src: "/images/AllServiceImages/webapp2.webp",
             alt: "Web App Design 4",
           },
           {
             id: 4,
-            src: "/images/AllServiceImages/webapp1.avif",
+            src: "/images/AllServiceImages/webapp1.webp",
             alt: "Web App Design 3",
           },
         ],
@@ -470,52 +470,50 @@ export default function page({ params }) {
           ],
         },
       },
-     swiperdata: [
-  {
-    title: "Web Application Strategy & Development",
-    description:
-      "Craft a robust web application strategy tailored to your business needs. Focus on scalable solutions and user-friendly interfaces.",
-    image: "/images/AllServiceImages/WebAppp1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for Web Applications",
-    description:
-      "Leverage PPC campaigns to drive traffic to your web applications, enhancing visibility and boosting overall performance.",
-    image: "/images/AllServiceImages/WebAppp2.jpeg",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media Integration for Web Apps",
-    description:
-      "Integrate social media features within your web applications to improve user engagement and enhance brand awareness.",
-    image: "/images/AllServiceImages/WebAppp4.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Responsive Design for Web Applications",
-    description:
-      "Ensure your web application is designed responsively for an optimal user experience across all devices and screen sizes.",
-    image: "/images/AllServiceImages/WebAppp7.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Management for Web Applications",
-    description:
-      "Implement effective content management strategies within your web applications to streamline updates and enhance user interaction.",
-    image: "/images/AllServiceImages/WebAppp5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local Optimization for Web Apps",
-    description:
-      "Optimize your web applications for local searches, ensuring your services are easily discoverable by nearby users.",
-    image: "/images/AllServiceImages/WebAppp6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
-
+      swiperdata: [
+        {
+          title: "Web Application Strategy & Development",
+          description:
+            "Craft a robust web application strategy tailored to your business needs. Focus on scalable solutions and user-friendly interfaces.",
+          image: "/images/AllServiceImages/WebAppp1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for Web Applications",
+          description:
+            "Leverage PPC campaigns to drive traffic to your web applications, enhancing visibility and boosting overall performance.",
+          image: "/images/AllServiceImages/WebAppp2.jpeg",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media Integration for Web Apps",
+          description:
+            "Integrate social media features within your web applications to improve user engagement and enhance brand awareness.",
+          image: "/images/AllServiceImages/WebAppp4.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Responsive Design for Web Applications",
+          description:
+            "Ensure your web application is designed responsively for an optimal user experience across all devices and screen sizes.",
+          image: "/images/AllServiceImages/WebAppp7.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Management for Web Applications",
+          description:
+            "Implement effective content management strategies within your web applications to streamline updates and enhance user interaction.",
+          image: "/images/AllServiceImages/WebAppp5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local Optimization for Web Apps",
+          description:
+            "Optimize your web applications for local searches, ensuring your services are easily discoverable by nearby users.",
+          image: "/images/AllServiceImages/WebAppp6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Web Application Development",
@@ -617,7 +615,7 @@ export default function page({ params }) {
             icon: <FaLock className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/WebAppp1.avif",
+        img: "/images/AllServiceImages/WebAppp1.webp",
         lastPara:
           "In today's digital landscape, a strong online presence is crucial for any business. Our web application development services are tailored to meet the unique needs of enterprises, ensuring that your application not only looks professional but also functions seamlessly. Our experienced developers utilize the latest technologies and best practices to create scalable, secure, and user-friendly web applications. Whether you're looking to revamp an existing application or build a new platform from scratch, our dedicated team is here to deliver high-quality solutions that align with your business goals while keeping your budget in mind.",
       },
@@ -627,7 +625,7 @@ export default function page({ params }) {
         Breadcrumb: "cms-website-development",
         heading: "Custom CMS Solutions for Your Business",
         para: "Are you looking to streamline your content management processes? A robust CMS is the ideal solution for managing your website's content efficiently. Whether you're implementing a new CMS or enhancing an existing one, our expert team at Nx Edge Solutions can deliver tailored CMS development services. We provide comprehensive CMS solutions that include user-friendly interfaces, flexible content management capabilities, secure access controls, and seamless integration with your existing systems. Trust our experienced developers to elevate your content management experience.",
-        img: "/images/AllServiceImages/WEBAPPLICATIONDEVELOPMENT.avif",
+        img: "/images/AllServiceImages/WEBAPPLICATIONDEVELOPMENT.webp",
       },
       gallerySection: {
         title: "Web Applications for Small Businesses & Startups",
@@ -641,72 +639,70 @@ export default function page({ params }) {
         images: [
           {
             id: 1,
-            src: "/images/AllServiceImages/webapp1.avif",
+            src: "/images/AllServiceImages/webapp1.webp",
             alt: "Web App Design 1",
           },
           {
             id: 2,
-            src: "/images/AllServiceImages/webapp2.avif",
+            src: "/images/AllServiceImages/webapp2.webp",
             alt: "Web App Design 2",
           },
           {
             id: 3,
-            src: "/images/AllServiceImages/webapp2.avif",
+            src: "/images/AllServiceImages/webapp2.webp",
             alt: "Web App Design 4",
           },
           {
             id: 4,
-            src: "/images/AllServiceImages/webapp1.avif",
+            src: "/images/AllServiceImages/webapp1.webp",
             alt: "Web App Design 3",
           },
         ],
       },
-     swiperdata: [
-  {
-    title: "Custom CMS Solutions",
-    description:
-      "Develop tailored CMS solutions that meet your business needs, enabling easy content management and flexibility for future growth.",
-    image: "/images/AllServiceImages/WebAppp1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Strategies for CMS Growth",
-    description:
-      "Implement effective PPC strategies that drive traffic to your CMS-powered website, enhancing visibility and conversion rates.",
-    image: "/images/AllServiceImages/WebAppp2.jpeg",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media Integration in CMS",
-    description:
-      "Integrate social media platforms within your CMS for seamless content sharing and enhanced audience engagement.",
-    image: "/images/AllServiceImages/WebAppp4.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Responsive Web Design for CMS",
-    description:
-      "Ensure your CMS design is responsive and user-friendly, improving accessibility across devices and enhancing user experience.",
-    image: "/images/AllServiceImages/WebAppp7.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "SEO-Friendly Content Creation",
-    description:
-      "Create and optimize content within your CMS to improve search engine rankings and drive organic traffic.",
-    image: "/images/AllServiceImages/WebAppp5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO for CMS Websites",
-    description:
-      "Optimize your CMS website for local search, ensuring that potential customers can easily find your business online.",
-    image: "/images/AllServiceImages/WebAppp6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
-
+      swiperdata: [
+        {
+          title: "Custom CMS Solutions",
+          description:
+            "Develop tailored CMS solutions that meet your business needs, enabling easy content management and flexibility for future growth.",
+          image: "/images/AllServiceImages/WebAppp1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Strategies for CMS Growth",
+          description:
+            "Implement effective PPC strategies that drive traffic to your CMS-powered website, enhancing visibility and conversion rates.",
+          image: "/images/AllServiceImages/WebAppp2.jpeg",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media Integration in CMS",
+          description:
+            "Integrate social media platforms within your CMS for seamless content sharing and enhanced audience engagement.",
+          image: "/images/AllServiceImages/WebAppp4.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Responsive Web Design for CMS",
+          description:
+            "Ensure your CMS design is responsive and user-friendly, improving accessibility across devices and enhancing user experience.",
+          image: "/images/AllServiceImages/WebAppp7.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "SEO-Friendly Content Creation",
+          description:
+            "Create and optimize content within your CMS to improve search engine rankings and drive organic traffic.",
+          image: "/images/AllServiceImages/WebAppp5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO for CMS Websites",
+          description:
+            "Optimize your CMS website for local search, ensuring that potential customers can easily find your business online.",
+          image: "/images/AllServiceImages/WebAppp6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       Section2: {
         img: "/images/serviceSide.webp",
         heading: "Reliable CMS Development Company",
@@ -836,7 +832,7 @@ export default function page({ params }) {
             icon: <FaLock className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/coporate.avif",
+        img: "/images/coporate.webp",
 
         lastPara:
           "In today's digital landscape, an efficient content management system is essential for any business. Our CMS development services are tailored to meet the unique needs of enterprises, ensuring that your platform not only looks professional but also functions seamlessly. Our experienced developers utilize the latest technologies and best practices to create scalable, secure, and user-friendly CMS solutions. Whether you're looking to revamp an existing system or build a new platform from scratch, our dedicated team is here to deliver high-quality solutions that align with your business goals while keeping your budget in mind.",
@@ -847,7 +843,7 @@ export default function page({ params }) {
         Breadcrumb: "business-development-services",
         heading: "Tailored Business Development Solutions",
         para: "Looking to elevate your business growth and establish a strong online presence? Our Business Development Services are designed to help you connect with customers, streamline operations, and boost your market reach. Whether you're a startup aiming to gain traction or an established enterprise seeking to optimize your processes, our expert team at Nx Edge Solutions delivers strategic solutions that drive results. We provide comprehensive services including market analysis, branding, digital marketing, and operational consulting to ensure your business achieves sustainable growth.",
-        img: "/images/AllServiceImages/businessDevelopment8.avif",
+        img: "/images/AllServiceImages/businessDevelopment8.webp",
       },
       gallerySection: {
         title: "Empowering Startups & Small Businesses",
@@ -857,10 +853,10 @@ export default function page({ params }) {
           "Our commitment to delivering measurable results means that we prioritize your success. With a strong emphasis on data-driven decision-making, we analyze your business environment to identify growth opportunities and risks. Let us partner with you to build a strong foundation for your business and pave the way for a prosperous future.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Design 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Design 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Design 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Design 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Design 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Design 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Design 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Design 4" },
         ],
       },
       Section2: {
@@ -890,51 +886,50 @@ export default function page({ params }) {
           ],
         },
       },
-     swiperdata: [
-  {
-    title: "Strategic Business Planning",
-    description:
-      "Develop a comprehensive business strategy tailored to your objectives, focusing on growth, sustainability, and market positioning.",
-    image: "/images/AllServiceImages/businessDevelopment1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "Targeted PPC Strategies",
-    description:
-      "Implement targeted PPC campaigns to effectively reach your audience, driving immediate traffic and boosting conversions.",
-    image: "/images/AllServiceImages/businessDevelopment2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media Strategies for Growth",
-    description:
-      "Leverage social media platforms to enhance your brand presence, engage your audience, and drive business growth.",
-    image: "/images/AllServiceImages/businessDevelopment3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Professional Website Development",
-    description:
-      "Create a professional and user-friendly website that enhances your brand image and improves customer interaction.",
-    image: "/images/AllServiceImages/businessDevelopment4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Marketing for Engagement",
-    description:
-      "Develop compelling content marketing strategies that resonate with your audience, improve engagement, and drive conversions.",
-    image: "/images/AllServiceImages/businessDevelopment5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local Market Optimization",
-    description:
-      "Enhance your business's local visibility and connect with nearby customers through targeted local marketing strategies.",
-    image: "/images/AllServiceImages/businessDevelopment6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "Strategic Business Planning",
+          description:
+            "Develop a comprehensive business strategy tailored to your objectives, focusing on growth, sustainability, and market positioning.",
+          image: "/images/AllServiceImages/businessDevelopment1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "Targeted PPC Strategies",
+          description:
+            "Implement targeted PPC campaigns to effectively reach your audience, driving immediate traffic and boosting conversions.",
+          image: "/images/AllServiceImages/businessDevelopment2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media Strategies for Growth",
+          description:
+            "Leverage social media platforms to enhance your brand presence, engage your audience, and drive business growth.",
+          image: "/images/AllServiceImages/businessDevelopment3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Professional Website Development",
+          description:
+            "Create a professional and user-friendly website that enhances your brand image and improves customer interaction.",
+          image: "/images/AllServiceImages/businessDevelopment4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Marketing for Engagement",
+          description:
+            "Develop compelling content marketing strategies that resonate with your audience, improve engagement, and drive conversions.",
+          image: "/images/AllServiceImages/businessDevelopment5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local Market Optimization",
+          description:
+            "Enhance your business's local visibility and connect with nearby customers through targeted local marketing strategies.",
+          image: "/images/AllServiceImages/businessDevelopment6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Market Research",
@@ -1047,7 +1042,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/businessDevelopment3.avif",
+        img: "/images/AllServiceImages/businessDevelopment3.webp",
         lastPara:
           "In today's competitive landscape, a strategic approach to business development is crucial for growth and sustainability. Our expert team at Nx Edge Solutions is dedicated to helping you navigate challenges and seize opportunities. With a focus on innovation and results, we create scalable, effective strategies that empower your business to thrive in the digital age.",
       },
@@ -1067,10 +1062,10 @@ export default function page({ params }) {
           "Our commitment to excellence means that we prioritize your satisfaction. We analyze your business goals and user needs to create a tailored website that not only looks great but also performs well. Let us partner with you to build a strong online foundation that drives growth and visibility.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Design 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Design 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Design 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Design 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Design 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Design 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Design 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Design 4" },
         ],
       },
       Section2: {
@@ -1101,50 +1096,49 @@ export default function page({ params }) {
         },
       },
       swiperdata: [
-  {
-    title: "Tailored Corporate Web Design",
-    description:
-      "Create a stunning corporate website that reflects your brand identity. We specialize in custom designs that engage visitors and drive conversions.",
-    image: "/images/AllServiceImages/coporate1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "Optimized PPC Strategies for Corporates",
-    description:
-      "Utilize targeted PPC campaigns designed specifically for corporate websites to enhance visibility and attract quality leads.",
-    image: "/images/AllServiceImages/coporate2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media Integration for Corporates",
-    description:
-      "Enhance your corporate website's visibility with strategic social media integration, fostering engagement and brand loyalty.",
-    image: "/images/AllServiceImages/coporate3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Responsive Design for Corporate Websites",
-    description:
-      "Implement a responsive web design that ensures an optimal viewing experience across all devices, enhancing user satisfaction and engagement.",
-    image: "/images/AllServiceImages/coporate4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "SEO-Friendly Content Development",
-    description:
-      "Produce high-quality content optimized for search engines, ensuring your corporate website ranks well and attracts the right audience.",
-    image: "/images/AllServiceImages/coporate5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO for Corporate Visibility",
-    description:
-      "Optimize your corporate website for local search results to increase visibility and attract local clients effectively.",
-    image: "/images/AllServiceImages/coporate6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+        {
+          title: "Tailored Corporate Web Design",
+          description:
+            "Create a stunning corporate website that reflects your brand identity. We specialize in custom designs that engage visitors and drive conversions.",
+          image: "/images/AllServiceImages/coporate1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "Optimized PPC Strategies for Corporates",
+          description:
+            "Utilize targeted PPC campaigns designed specifically for corporate websites to enhance visibility and attract quality leads.",
+          image: "/images/AllServiceImages/coporate2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media Integration for Corporates",
+          description:
+            "Enhance your corporate website's visibility with strategic social media integration, fostering engagement and brand loyalty.",
+          image: "/images/AllServiceImages/coporate3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Responsive Design for Corporate Websites",
+          description:
+            "Implement a responsive web design that ensures an optimal viewing experience across all devices, enhancing user satisfaction and engagement.",
+          image: "/images/AllServiceImages/coporate4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "SEO-Friendly Content Development",
+          description:
+            "Produce high-quality content optimized for search engines, ensuring your corporate website ranks well and attracts the right audience.",
+          image: "/images/AllServiceImages/coporate5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO for Corporate Visibility",
+          description:
+            "Optimize your corporate website for local search results to increase visibility and attract local clients effectively.",
+          image: "/images/AllServiceImages/coporate6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Custom Web Design",
@@ -1257,7 +1251,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/coporate5.avif",
+        img: "/images/AllServiceImages/coporate5.webp",
         lastPara:
           "In today's competitive digital landscape, a well-designed corporate website is crucial for business success. Our expert team at Nx Edge Solutions is dedicated to helping you navigate challenges and seize opportunities. With a focus on innovation and results, we create effective strategies that empower your business to thrive online.",
       },
@@ -1267,7 +1261,7 @@ export default function page({ params }) {
         Breadcrumb: "web-app-development-android",
         heading: "Custom Android Application Development Solutions",
         para: "Are you looking to build a powerful Android application that engages users and drives business growth? Our Android Application Development services are tailored to meet your specific needs, ensuring that your app provides a seamless user experience while aligning with your brand's vision. Whether you are a startup or an established enterprise, our expert team at Nx Edge Solutions crafts high-quality, user-friendly applications that enhance your digital presence. We offer a comprehensive range of services, including UI/UX design, app testing, and deployment, to help you achieve a successful mobile strategy.",
-        img: "/images/AllServiceImages/androidapplicationdevelopment5.avif",
+        img: "/images/AllServiceImages/androidapplicationdevelopment5.webp",
       },
       gallerySection: {
         title: "Empowering Businesses Through Exceptional Mobile Apps",
@@ -1277,10 +1271,10 @@ export default function page({ params }) {
           "Our commitment to excellence means that we prioritize your satisfaction. We analyze your business goals and user needs to create a tailored app that not only looks great but also performs well. Let us partner with you to build a strong mobile foundation that drives growth and visibility.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Design 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Design 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Design 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Design 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Design 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Design 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Design 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Design 4" },
         ],
       },
       Section2: {
@@ -1310,51 +1304,50 @@ export default function page({ params }) {
           ],
         },
       },
-    swiperdata: [
-  {
-    title: "Comprehensive SEO Strategies",
-    description:
-      "Develop a tailored SEO strategy to enhance your online presence. Focus on both on-page and off-page optimization for sustainable growth.",
-    image: "/images/AllServiceImages/androidapplicationdevelopment1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "Integrated PPC and SEO Solutions",
-    description:
-      "Combine PPC advertising with SEO for immediate traffic and long-term results, enhancing your website's credibility and reach.",
-    image: "/images/AllServiceImages/androidapplicationdevelopment2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Maximizing SEO with Social Media",
-    description:
-      "Enhance your SEO efforts through effective social media integration, driving engagement and increasing your brand's online visibility.",
-    image: "/images/AllServiceImages/androidapplicationdevelopment3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "SEO-Friendly Web Design",
-    description:
-      "Create a website that adheres to SEO best practices, ensuring fast load times, mobile responsiveness, and an excellent user experience.",
-    image: "/images/AllServiceImages/androidapplicationdevelopment4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "SEO-Optimized Content Development",
-    description:
-      "Produce engaging, keyword-rich content designed to resonate with your audience and boost your search engine rankings.",
-    image: "/images/AllServiceImages/androidapplicationdevelopment5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO Enhancement Services",
-    description:
-      "Optimize your business for local searches with our Local SEO services, including Google My Business optimization and local keyword targeting.",
-    image: "/images/AllServiceImages/androidapplicationdevelopment6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "Comprehensive SEO Strategies",
+          description:
+            "Develop a tailored SEO strategy to enhance your online presence. Focus on both on-page and off-page optimization for sustainable growth.",
+          image: "/images/AllServiceImages/androidapplicationdevelopment1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "Integrated PPC and SEO Solutions",
+          description:
+            "Combine PPC advertising with SEO for immediate traffic and long-term results, enhancing your website's credibility and reach.",
+          image: "/images/AllServiceImages/androidapplicationdevelopment2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Maximizing SEO with Social Media",
+          description:
+            "Enhance your SEO efforts through effective social media integration, driving engagement and increasing your brand's online visibility.",
+          image: "/images/AllServiceImages/androidapplicationdevelopment3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "SEO-Friendly Web Design",
+          description:
+            "Create a website that adheres to SEO best practices, ensuring fast load times, mobile responsiveness, and an excellent user experience.",
+          image: "/images/AllServiceImages/androidapplicationdevelopment4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "SEO-Optimized Content Development",
+          description:
+            "Produce engaging, keyword-rich content designed to resonate with your audience and boost your search engine rankings.",
+          image: "/images/AllServiceImages/androidapplicationdevelopment5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Enhancement Services",
+          description:
+            "Optimize your business for local searches with our Local SEO services, including Google My Business optimization and local keyword targeting.",
+          image: "/images/AllServiceImages/androidapplicationdevelopment6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Custom App Development",
@@ -1468,7 +1461,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/iosApplicationDevelopment1.avif",
+        img: "/images/AllServiceImages/iosApplicationDevelopment1.webp",
         lastPara:
           "In today's competitive mobile landscape, a well-developed Android application is crucial for business success. Our expert team at Nx Edge Solutions is dedicated to helping you navigate challenges and seize opportunities. With a focus on innovation and results, we create effective strategies that empower your business to thrive in the mobile age.",
       },
@@ -1478,7 +1471,7 @@ export default function page({ params }) {
         Breadcrumb: "ios-application-development",
         heading: "Custom iOS Application Development Solutions",
         para: "Are you looking to create a powerful mobile application that reflects your brand's vision? Our iOS Application Development services are designed to meet your specific needs, ensuring that your app engages users and drives conversions. Whether you are a startup or an established enterprise, our expert team at Nx Edge Solutions develops stunning, user-friendly iOS applications that enhance your brand and improve your mobile presence. We provide a range of services, including UI/UX design, performance optimization, and app store deployment, to help you achieve a successful mobile strategy.",
-        img: "/images/AllServiceImages/iosApplicationDevelopment7.avif",
+        img: "/images/AllServiceImages/iosApplicationDevelopment7.webp",
       },
       gallerySection: {
         title: "Empowering Brands Through Exceptional App Design",
@@ -1488,10 +1481,10 @@ export default function page({ params }) {
           "Our commitment to excellence means that we prioritize your satisfaction. We analyze your business goals and user needs to create a tailored application that not only looks great but also performs exceptionally. Let us partner with you to build a strong mobile foundation that drives growth and visibility.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Design 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Design 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Design 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Design 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Design 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Design 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Design 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Design 4" },
         ],
       },
       Section2: {
@@ -1521,51 +1514,50 @@ export default function page({ params }) {
           ],
         },
       },
-     swiperdata: [
-  {
-    title: "SEO Strategy & Optimization",
-    description:
-      "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
-    image: "/images/AllServiceImages/iosApplicationDevelopment1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for SEO",
-    description:
-      "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
-    image: "/images/AllServiceImages/iosApplicationDevelopment2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media & SEO Integration",
-    description:
-      "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
-    image: "/images/AllServiceImages/iosApplicationDevelopment3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Web Design for SEO",
-    description:
-      "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
-    image: "/images/AllServiceImages/iosApplicationDevelopment4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Creation for SEO",
-    description:
-      "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
-    image: "/images/AllServiceImages/iosApplicationDevelopment5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO Optimization",
-    description:
-      "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
-    image: "/images/AllServiceImages/iosApplicationDevelopment6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/iosApplicationDevelopment1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for SEO",
+          description:
+            "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+          image: "/images/AllServiceImages/iosApplicationDevelopment2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & SEO Integration",
+          description:
+            "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+          image: "/images/AllServiceImages/iosApplicationDevelopment3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for SEO",
+          description:
+            "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+          image: "/images/AllServiceImages/iosApplicationDevelopment4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for SEO",
+          description:
+            "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+          image: "/images/AllServiceImages/iosApplicationDevelopment5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Optimization",
+          description:
+            "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+          image: "/images/AllServiceImages/iosApplicationDevelopment6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Custom App Design",
@@ -1678,7 +1670,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/iosApplicationDevelopment2.avif",
+        img: "/images/AllServiceImages/iosApplicationDevelopment2.webp",
         lastPara:
           "In today's competitive mobile landscape, a well-designed iOS application is crucial for business success. Our expert team at Nx Edge Solutions is dedicated to helping you navigate challenges and seize opportunities. With a focus on innovation and results, we create effective strategies that empower your business to thrive in the mobile space.",
       },
@@ -1688,7 +1680,7 @@ export default function page({ params }) {
         Breadcrumb: "hybrid-application-development",
         heading: "Custom Hybrid Application Development Solutions",
         para: "Are you looking to create a versatile mobile application that works seamlessly across multiple platforms? Our Hybrid Application Development services are designed to meet your specific needs, ensuring that your app engages users and drives conversions. Whether you are a startup or an established enterprise, our expert team at Nx Edge Solutions develops stunning, user-friendly hybrid applications that enhance your brand and improve your mobile presence. We provide a range of services, including UI/UX design, performance optimization, and app store deployment, to help you achieve a successful mobile strategy.",
-        img: "/images/AllServiceImages/hybridapplicationdevelopmen4.avif",
+        img: "/images/AllServiceImages/hybridapplicationdevelopmen4.webp",
       },
       gallerySection: {
         title: "Empowering Brands Through Exceptional App Design",
@@ -1698,10 +1690,10 @@ export default function page({ params }) {
           "Our commitment to excellence means that we prioritize your satisfaction. We analyze your business goals and user needs to create a tailored application that not only looks great but also performs exceptionally. Let us partner with you to build a strong mobile foundation that drives growth and visibility.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Design 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Design 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Design 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Design 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Design 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Design 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Design 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Design 4" },
         ],
       },
       Section2: {
@@ -1731,51 +1723,50 @@ export default function page({ params }) {
           ],
         },
       },
-     swiperdata: [
-  {
-    title: "SEO Strategy & Optimization",
-    description:
-      "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
-    image: "/images/AllServiceImages/hybridapplicationdevelopment1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for SEO",
-    description:
-      "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
-    image: "/images/AllServiceImages/hybridapplicationdevelopment2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media & SEO Integration",
-    description:
-      "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
-    image: "/images/AllServiceImages/hybridapplicationdevelopment3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Web Design for SEO",
-    description:
-      "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
-    image: "/images/AllServiceImages/hybridapplicationdevelopment4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Creation for SEO",
-    description:
-      "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
-    image: "/images/AllServiceImages/hybridapplicationdevelopment5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO Optimization",
-    description:
-      "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
-    image: "/images/AllServiceImages/hybridapplicationdevelopment6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/hybridapplicationdevelopment1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for SEO",
+          description:
+            "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+          image: "/images/AllServiceImages/hybridapplicationdevelopment2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & SEO Integration",
+          description:
+            "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+          image: "/images/AllServiceImages/hybridapplicationdevelopment3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for SEO",
+          description:
+            "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+          image: "/images/AllServiceImages/hybridapplicationdevelopment4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for SEO",
+          description:
+            "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+          image: "/images/AllServiceImages/hybridapplicationdevelopment5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Optimization",
+          description:
+            "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+          image: "/images/AllServiceImages/hybridapplicationdevelopment6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Custom App Design",
@@ -1888,7 +1879,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/hybridapplicationdevelopmen4.avif",
+        img: "/images/AllServiceImages/hybridapplicationdevelopmen4.webp",
         lastPara:
           "In today's competitive mobile landscape, a well-designed hybrid application is crucial for business success. Our expert team at Nx Edge Solutions is dedicated to helping you navigate challenges and seize opportunities. With a focus on innovation and results, we create effective strategies that empower your business to thrive in the mobile space.",
       },
@@ -1901,19 +1892,19 @@ export default function page({ params }) {
             title: "E-commerce Transformation",
             description:
               "We helped a small retail company transition to a hybrid app, resulting in a 40% increase in sales within six months. The app's intuitive design and seamless payment integration improved customer satisfaction significantly.",
-            img: "/images/successStory1.avif",
+            img: "/images/successStory1.webp",
           },
           {
             title: "Streamlined Operations",
             description:
               "A logistics company partnered with us to develop a hybrid application that optimized their delivery processes. The app provided real-time tracking and reporting, reducing operational costs by 30%.",
-            img: "/images/successStory2.avif",
+            img: "/images/successStory2.webp",
           },
           {
             title: "Enhanced User Engagement",
             description:
               "We collaborated with a healthcare provider to create a hybrid application that facilitated patient appointments and telemedicine services. This led to a 50% increase in patient engagement and satisfaction.",
-            img: "/images/successStory3.avif",
+            img: "/images/successStory3.webp",
           },
         ],
       },
@@ -1950,7 +1941,7 @@ export default function page({ params }) {
         Breadcrumb: "mobile-application-testing",
         heading: "Comprehensive Mobile Application Testing Solutions",
         para: "Are you seeking to ensure the quality and performance of your mobile application across various devices and platforms? Our Mobile Application Testing services are tailored to identify and resolve issues before your app goes live. Whether you are a startup or an established enterprise, our expert team at Nx Edge Solutions provides thorough testing processes to enhance your application's reliability and user satisfaction. We cover a range of testing types, including functional testing, performance testing, and security testing, to ensure your app meets the highest standards.",
-        img: "/images/AllServiceImages/mobileapplicationtesting7.avif",
+        img: "/images/AllServiceImages/mobileapplicationtesting7.webp",
       },
       gallerySection: {
         title: "Empowering Brands Through Rigorous Testing",
@@ -1960,10 +1951,10 @@ export default function page({ params }) {
           "Our commitment to excellence means that we prioritize quality and user experience. We analyze your application's requirements and conduct extensive testing to deliver a product that not only meets but exceeds user expectations. Let us partner with you to ensure your mobile application stands out in the competitive app marketplace.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Testing 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Testing 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Testing 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Testing 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Testing 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Testing 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Testing 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Testing 4" },
         ],
       },
       Section2: {
@@ -1994,50 +1985,49 @@ export default function page({ params }) {
         },
       },
       swiperdata: [
-  {
-    title: "SEO Strategy & Optimization",
-    description:
-      "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
-    image: "/images/AllServiceImages/mobileapplicationtesting1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for SEO",
-    description:
-      "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
-    image: "/images/AllServiceImages/mobileapplicationtesting2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media & SEO Integration",
-    description:
-      "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
-    image: "/images/AllServiceImages/mobileapplicationtesting4.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Web Design for SEO",
-    description:
-      "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
-    image: "/images/AllServiceImages/mobileapplicationtesting5.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Creation for SEO",
-    description:
-      "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
-    image: "/images/AllServiceImages/mobileapplicationtesting7.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO Optimization",
-    description:
-      "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
-    image: "/images/AllServiceImages/mobileapplicationtesting6.avif", // Assuming to keep the last image
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/mobileapplicationtesting1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for SEO",
+          description:
+            "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+          image: "/images/AllServiceImages/mobileapplicationtesting2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & SEO Integration",
+          description:
+            "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+          image: "/images/AllServiceImages/mobileapplicationtesting4.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for SEO",
+          description:
+            "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+          image: "/images/AllServiceImages/mobileapplicationtesting5.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for SEO",
+          description:
+            "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+          image: "/images/AllServiceImages/mobileapplicationtesting7.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Optimization",
+          description:
+            "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+          image: "/images/AllServiceImages/mobileapplicationtesting6.webp", // Assuming to keep the last image
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Functional Testing",
@@ -2149,7 +2139,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/mobileapplicationtesting2.avif",
+        img: "/images/AllServiceImages/mobileapplicationtesting2.webp",
         lastPara:
           "In today's competitive mobile landscape, ensuring a bug-free application is crucial for your business success. Our expert team at Nx Edge Solutions is dedicated to helping you navigate challenges and seize opportunities. With a focus on quality assurance and user experience, we create effective strategies that empower your business to thrive in the mobile space.",
       },
@@ -2159,7 +2149,7 @@ export default function page({ params }) {
         Breadcrumb: "quality-assurance",
         heading: "Comprehensive Quality Assurance Solutions",
         para: "At NX Edge Solutions, we understand that quality is paramount in software development. Our Quality Assurance services are designed to ensure your applications perform flawlessly across all platforms. From functional testing to performance optimization, our expert QA team employs industry best practices to deliver high-quality products that meet your business goals. Whether you’re launching a new application or improving an existing one, our comprehensive testing strategies help ensure a seamless user experience.",
-        img: "/images/AllServiceImages/qualityAssurance1.avif",
+        img: "/images/AllServiceImages/qualityAssurance1.webp",
       },
       gallerySection: {
         title: "Elevating Standards Through Rigorous Testing",
@@ -2169,10 +2159,10 @@ export default function page({ params }) {
           "Our commitment to quality means we leverage the latest testing technologies and methodologies, enabling us to detect and resolve issues early in the development process. Let us help you build confidence in your software solutions and enhance your brand reputation through rigorous quality assurance.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Testing 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Testing 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Testing 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Testing 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Testing 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Testing 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Testing 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Testing 4" },
         ],
       },
       Section2: {
@@ -2242,51 +2232,50 @@ export default function page({ params }) {
           icon: <FaBug className="text-4xl text-[#673ab7] mx-auto" />,
         },
       ],
-     swiperdata: [
-  {
-    title: "SEO Strategy & Optimization",
-    description:
-      "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
-    image: "/images/AllServiceImages/qualityAssurance1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for SEO",
-    description:
-      "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
-    image: "/images/AllServiceImages/qualityAssurance2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media & SEO Integration",
-    description:
-      "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
-    image: "/images/AllServiceImages/qualityAssurance3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Web Design for SEO",
-    description:
-      "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
-    image: "/images/AllServiceImages/qualityAssurance4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Creation for SEO",
-    description:
-      "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
-    image: "/images/AllServiceImages/qualityAssurance5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO Optimization",
-    description:
-      "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
-    image: "/images/AllServiceImages/qualityAssurance8.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/qualityAssurance1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for SEO",
+          description:
+            "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+          image: "/images/AllServiceImages/qualityAssurance2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & SEO Integration",
+          description:
+            "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+          image: "/images/AllServiceImages/qualityAssurance3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for SEO",
+          description:
+            "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+          image: "/images/AllServiceImages/qualityAssurance4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for SEO",
+          description:
+            "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+          image: "/images/AllServiceImages/qualityAssurance5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Optimization",
+          description:
+            "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+          image: "/images/AllServiceImages/qualityAssurance8.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       section3: {
         heading: "Technologies We Use for Quality Assurance",
         data: [
@@ -2357,7 +2346,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/qualityAssurance1.avif",
+        img: "/images/AllServiceImages/qualityAssurance1.webp",
         lastPara:
           "In today’s competitive software landscape, robust quality assurance is essential for success. At NX Edge Solutions, we are dedicated to helping you navigate challenges and seize opportunities through comprehensive QA services. Together, we can build exceptional software solutions that meet your business needs and exceed user expectations.",
       },
@@ -2367,7 +2356,7 @@ export default function page({ params }) {
         Breadcrumb: "search-engine-optimization",
         heading: "Custom Search Engine Optimization Solutions",
         para: "In today's digital landscape, having a strong online presence is vital for success. At Nx Edge Solutions, our Search Engine Optimization (SEO) services are tailored to elevate your website's visibility and drive organic traffic. Whether you are a startup or an established brand, our expert team employs proven strategies to enhance your search engine rankings, ensuring your business is easily found by potential customers. We focus on comprehensive keyword research, on-page and off-page optimization, and continuous performance analysis to help you achieve your digital marketing goals.",
-        img: "/images/AllServiceImages/searchEngineOptimization2.avif",
+        img: "/images/AllServiceImages/searchEngineOptimization2.webp",
       },
       gallerySection: {
         title: "Boost Your Online Presence with Expert SEO",
@@ -2377,10 +2366,10 @@ export default function page({ params }) {
           "Our commitment to delivering results means that we continuously monitor and refine our strategies based on data-driven insights. Let us help you harness the power of SEO to reach new heights and engage your target audience effectively.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "Design 1" },
-          { id: 2, src: "/images/smallBusiness2.avif", alt: "Design 2" },
-          { id: 3, src: "/images/smallBusiness3.avif", alt: "Design 3" },
-          { id: 4, src: "/images/samllBusiness4.avif", alt: "Design 4" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "Design 1" },
+          { id: 2, src: "/images/smallBusiness2.webp", alt: "Design 2" },
+          { id: 3, src: "/images/smallBusiness3.webp", alt: "Design 3" },
+          { id: 4, src: "/images/samllBusiness4.webp", alt: "Design 4" },
         ],
       },
       Section2: {
@@ -2410,51 +2399,50 @@ export default function page({ params }) {
           ],
         },
       },
-     swiperdata: [
-  {
-    title: "SEO Strategy & Optimization",
-    description:
-      "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
-    image: "/images/AllServiceImages/searchEngineOptimization3.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for SEO",
-    description:
-      "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
-    image: "/images/AllServiceImages/searchEngineOptimization4.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media & SEO Integration",
-    description:
-      "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
-    image: "/images/AllServiceImages/searchEngineOptimization5.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Web Design for SEO",
-    description:
-      "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
-    image: "/images/AllServiceImages/searchEngineOptimization6.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Creation for SEO",
-    description:
-      "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
-    image: "/images/AllServiceImages/searchEngineOptimization7.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local SEO Optimization",
-    description:
-      "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
-    image: "/images/AllServiceImages/searchEngineOptimization9.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/searchEngineOptimization3.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for SEO",
+          description:
+            "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
+          image: "/images/AllServiceImages/searchEngineOptimization4.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & SEO Integration",
+          description:
+            "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
+          image: "/images/AllServiceImages/searchEngineOptimization5.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for SEO",
+          description:
+            "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
+          image: "/images/AllServiceImages/searchEngineOptimization6.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for SEO",
+          description:
+            "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
+          image: "/images/AllServiceImages/searchEngineOptimization7.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local SEO Optimization",
+          description:
+            "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
+          image: "/images/AllServiceImages/searchEngineOptimization9.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Comprehensive SEO Audits",
@@ -2566,7 +2554,7 @@ export default function page({ params }) {
             icon: <FaChartPie className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/searchEngineOptimization2.avif",
+        img: "/images/AllServiceImages/searchEngineOptimization2.webp",
         lastPara:
           "In a competitive online landscape, a robust SEO strategy is essential for business success. At Nx Edge Solutions, we are committed to helping you navigate challenges and capitalize on opportunities. With a focus on innovation and results, we develop effective strategies that empower your business to thrive in the digital space.",
       },
@@ -2576,7 +2564,7 @@ export default function page({ params }) {
         Breadcrumb: "pay-per-click-service",
         heading: "Custom Pay-Per-Click (PPC) Solutions",
         para: "Nx Edge Solutions provides top-tier Pay-Per-Click (PPC) advertising services designed to boost your business's visibility and generate targeted leads. Whether you are a startup or an established business, our PPC experts craft highly effective campaigns that focus on your unique goals and audience. We specialize in creating strategies that deliver measurable results, optimizing ad performance across platforms like Google Ads, Bing Ads, and social media channels.",
-        img: "/images/AllServiceImages/payPerClickService1.avif",
+        img: "/images/AllServiceImages/payPerClickService1.webp",
       },
       gallerySection: {
         title: "Maximize ROI with Our PPC Expertise",
@@ -2586,20 +2574,20 @@ export default function page({ params }) {
           "From small businesses to large enterprises, we provide transparent and data-driven PPC strategies that help you capture leads, increase conversions, and outshine your competition. Let us handle your PPC efforts while you focus on growing your business.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -2632,50 +2620,49 @@ export default function page({ params }) {
         },
       },
       swiperdata: [
-  {
-    title: "SEO Strategy & Optimization",
-    description:
-      "Craft a powerful PPC strategy tailored to your business. Optimize campaigns to achieve long-term visibility and traffic growth.",
-    image: "/images/AllServiceImages/payPerClickService2.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for Enhanced Visibility",
-    description:
-      "Leverage targeted PPC campaigns to generate instant traffic while boosting your website's overall authority.",
-    image: "/images/AllServiceImages/payPerClickService3.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media Integration with PPC",
-    description:
-      "Boost your PPC efforts through social media integration, driving targeted traffic and enhancing brand visibility across multiple channels.",
-    image: "/images/AllServiceImages/payPerClickService4.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Web Design for PPC Campaigns",
-    description:
-      "Ensure your landing page design is optimized for PPC. We focus on responsive designs, fast load times, and optimal user experience to boost conversions.",
-    image: "/images/AllServiceImages/payPerClickService5.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Creation for PPC",
-    description:
-      "Create compelling ad copy and landing page content that engages your audience and improves your PPC campaign effectiveness.",
-    image: "/images/AllServiceImages/payPerClickService6.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local PPC Optimization",
-    description:
-      "Enhance your local visibility with our Local PPC services. Optimize your campaigns to connect with your community effectively.",
-    image: "/images/AllServiceImages/payPerClickService7.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+        {
+          title: "SEO Strategy & Optimization",
+          description:
+            "Craft a powerful PPC strategy tailored to your business. Optimize campaigns to achieve long-term visibility and traffic growth.",
+          image: "/images/AllServiceImages/payPerClickService2.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for Enhanced Visibility",
+          description:
+            "Leverage targeted PPC campaigns to generate instant traffic while boosting your website's overall authority.",
+          image: "/images/AllServiceImages/payPerClickService3.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media Integration with PPC",
+          description:
+            "Boost your PPC efforts through social media integration, driving targeted traffic and enhancing brand visibility across multiple channels.",
+          image: "/images/AllServiceImages/payPerClickService4.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Design for PPC Campaigns",
+          description:
+            "Ensure your landing page design is optimized for PPC. We focus on responsive designs, fast load times, and optimal user experience to boost conversions.",
+          image: "/images/AllServiceImages/payPerClickService5.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for PPC",
+          description:
+            "Create compelling ad copy and landing page content that engages your audience and improves your PPC campaign effectiveness.",
+          image: "/images/AllServiceImages/payPerClickService6.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local PPC Optimization",
+          description:
+            "Enhance your local visibility with our Local PPC services. Optimize your campaigns to connect with your community effectively.",
+          image: "/images/AllServiceImages/payPerClickService7.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Targeted Keyword Research",
@@ -2785,7 +2772,7 @@ export default function page({ params }) {
             icon: <FaChartPie className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/payPerClickService1.avif",
+        img: "/images/AllServiceImages/payPerClickService1.webp",
         lastPara:
           "Whether you’re looking to generate more leads, increase sales, or boost brand awareness, Nx Edge Solutions is here to help. Our tailored PPC solutions provide the precision and scalability your business needs to grow. Partner with us to maximize your advertising spend and achieve measurable results.",
       },
@@ -2795,7 +2782,7 @@ export default function page({ params }) {
         Breadcrumb: "social-media-marketing",
         heading: "Social Media Marketing Services",
         para: "Unlock the full potential of social media with Nx Edge Solutions’ Social Media Marketing Services. We specialize in developing targeted strategies that amplify your brand’s online presence and engage your audience on platforms like Facebook, Instagram, Twitter, and LinkedIn. Our services are designed to help you grow your brand, increase traffic, and generate quality leads that convert.",
-        img: "/images/AllServiceImages/socialMediaMarketingService4.avif",
+        img: "/images/AllServiceImages/socialMediaMarketingService4.webp",
       },
       gallerySection: {
         title: "Enhancing Your Brand Presence on Social Media",
@@ -2805,20 +2792,20 @@ export default function page({ params }) {
           "Whether it's organic growth or paid advertising, we ensure your brand stays visible and relevant in the crowded social media landscape. With our expertise, we boost your brand's reach and drive meaningful engagement that translates into real-world results.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -2888,51 +2875,50 @@ export default function page({ params }) {
           icon: <FaLightbulb className="text-4xl text-[#673ab7] mx-auto" />,
         },
       ],
-     swiperdata: [
-  {
-    title: "Social Media Strategy & Optimization",
-    description:
-      "Craft a powerful social media strategy tailored to your business. Optimize your profiles and posts to achieve long-term engagement and growth.",
-    image: "/images/AllServiceImages/socialMediaMarketingService2.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for Social Media",
-    description:
-      "Leverage PPC campaigns to enhance your social media efforts and generate instant traffic while boosting your brand's overall authority.",
-    image: "/images/AllServiceImages/socialMediaMarketingService3.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media & Content Integration",
-    description:
-      "Integrate your social media and content strategies to drive engagement and enhance brand visibility across multiple platforms.",
-    image: "/images/AllServiceImages/socialMediaMarketingService4.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Responsive Web Design for Social Media",
-    description:
-      "Ensure your website design is optimized for social media sharing. Focus on responsive layouts and fast load times to enhance user experience.",
-    image: "/images/AllServiceImages/socialMediaMarketingService5.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Content Creation for Social Media",
-    description:
-      "Create high-quality, engaging content that resonates with your audience and enhances your social media presence.",
-    image: "/images/AllServiceImages/socialMediaMarketingService6.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local Social Media Optimization",
-    description:
-      "Improve your local visibility on social media with targeted strategies. Optimize your profiles and posts to connect with your community.",
-    image: "/images/AllServiceImages/socialMediaMarketingService7.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "Social Media Strategy & Optimization",
+          description:
+            "Craft a powerful social media strategy tailored to your business. Optimize your profiles and posts to achieve long-term engagement and growth.",
+          image: "/images/AllServiceImages/socialMediaMarketingService2.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for Social Media",
+          description:
+            "Leverage PPC campaigns to enhance your social media efforts and generate instant traffic while boosting your brand's overall authority.",
+          image: "/images/AllServiceImages/socialMediaMarketingService3.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media & Content Integration",
+          description:
+            "Integrate your social media and content strategies to drive engagement and enhance brand visibility across multiple platforms.",
+          image: "/images/AllServiceImages/socialMediaMarketingService4.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Responsive Web Design for Social Media",
+          description:
+            "Ensure your website design is optimized for social media sharing. Focus on responsive layouts and fast load times to enhance user experience.",
+          image: "/images/AllServiceImages/socialMediaMarketingService5.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Content Creation for Social Media",
+          description:
+            "Create high-quality, engaging content that resonates with your audience and enhances your social media presence.",
+          image: "/images/AllServiceImages/socialMediaMarketingService6.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local Social Media Optimization",
+          description:
+            "Improve your local visibility on social media with targeted strategies. Optimize your profiles and posts to connect with your community.",
+          image: "/images/AllServiceImages/socialMediaMarketingService7.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       section3: {
         heading: "Platforms We Specialize In",
         data: [
@@ -2997,7 +2983,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/socialMediaMarketingService2.avif",
+        img: "/images/AllServiceImages/socialMediaMarketingService2.webp",
         lastPara:
           "At Nx Edge Solutions, we are committed to delivering outstanding social media marketing services that empower your business to reach new heights. Contact us today to explore how we can help your brand succeed on social platforms.",
       },
@@ -3007,7 +2993,7 @@ export default function page({ params }) {
         Breadcrumb: "local-seo-services",
         heading: "Local SEO Services",
         para: "Boost your business visibility in local search results with Nx Edge Solutions’ Local SEO Services. We specialize in optimizing your online presence to attract customers from your local community, ensuring that your business stands out in local searches and maps results. Whether you’re a small business or a multi-location company, we help you drive more local traffic and grow your customer base.",
-        img: "/images/AllServiceImages/localSeoServices1.avif",
+        img: "/images/AllServiceImages/localSeoServices1.webp",
       },
       gallerySection: {
         title: "Dominate Local Search Results",
@@ -3017,20 +3003,20 @@ export default function page({ params }) {
           "We implement strategies tailored to your location, including Google My Business optimization, local citations, and localized content, helping you outrank your competition and drive more relevant traffic to your business.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -3062,51 +3048,50 @@ export default function page({ params }) {
           ],
         },
       },
-     swiperdata: [
-  {
-    title: "Local SEO Strategy & Optimization",
-    description:
-      "Develop a comprehensive local SEO strategy tailored to your business needs. Optimize on-page and off-page factors for improved local visibility.",
-    image: "/images/AllServiceImages/localSeoServices2.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "PPC Campaigns for Local SEO",
-    description:
-      "Utilize targeted PPC campaigns to enhance your local SEO efforts and drive immediate traffic to your business.",
-    image: "/images/AllServiceImages/localSeoServices3.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media Integration for Local SEO",
-    description:
-      "Leverage social media platforms to enhance your local SEO, driving engagement and increasing brand visibility in your community.",
-    image: "/images/AllServiceImages/localSeoServices4.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "SEO-Friendly Web Design",
-    description:
-      "Create a website that is both visually appealing and optimized for local SEO, ensuring a great user experience and improved search rankings.",
-    image: "/images/AllServiceImages/localSeoServices5.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "High-Quality Local Content Creation",
-    description:
-      "Produce engaging, SEO-optimized content that resonates with your local audience and improves search engine rankings.",
-    image: "/images/AllServiceImages/localSeoServices6.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Optimize Your Google My Business",
-    description:
-      "Maximize your local search visibility by optimizing your Google My Business profile and ensuring accurate business information.",
-    image: "/images/AllServiceImages/localSeoServices7.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "Local SEO Strategy & Optimization",
+          description:
+            "Develop a comprehensive local SEO strategy tailored to your business needs. Optimize on-page and off-page factors for improved local visibility.",
+          image: "/images/AllServiceImages/localSeoServices2.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "PPC Campaigns for Local SEO",
+          description:
+            "Utilize targeted PPC campaigns to enhance your local SEO efforts and drive immediate traffic to your business.",
+          image: "/images/AllServiceImages/localSeoServices3.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media Integration for Local SEO",
+          description:
+            "Leverage social media platforms to enhance your local SEO, driving engagement and increasing brand visibility in your community.",
+          image: "/images/AllServiceImages/localSeoServices4.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "SEO-Friendly Web Design",
+          description:
+            "Create a website that is both visually appealing and optimized for local SEO, ensuring a great user experience and improved search rankings.",
+          image: "/images/AllServiceImages/localSeoServices5.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "High-Quality Local Content Creation",
+          description:
+            "Produce engaging, SEO-optimized content that resonates with your local audience and improves search engine rankings.",
+          image: "/images/AllServiceImages/localSeoServices6.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Optimize Your Google My Business",
+          description:
+            "Maximize your local search visibility by optimizing your Google My Business profile and ensuring accurate business information.",
+          image: "/images/AllServiceImages/localSeoServices7.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Google My Business",
@@ -3203,7 +3188,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/localSeoServices10.avif",
+        img: "/images/AllServiceImages/localSeoServices10.webp",
         lastPara:
           "Get in touch with Nx Edge Solutions today to learn how we can help your business dominate local search and attract more customers from your area.",
       },
@@ -3213,7 +3198,7 @@ export default function page({ params }) {
         Breadcrumb: "content-marketing",
         heading: "Content Marketing Services",
         para: "At Nx Edge Solutions, we believe that great content is the cornerstone of effective marketing. Our Content Marketing Services are designed to engage your audience, build brand authority, and drive conversions. We create tailored content strategies that align with your business goals, utilizing various formats to capture your audience’s attention.",
-        img: "/images/AllServiceImages/contentMarketingService2.avif",
+        img: "/images/AllServiceImages/contentMarketingService2.webp",
       },
       gallerySection: {
         title: "Engaging Your Audience with Quality Content",
@@ -3223,20 +3208,20 @@ export default function page({ params }) {
           "By leveraging SEO best practices, we ensure that your content is discoverable and drives traffic to your website. Our goal is to create a consistent and engaging content experience that establishes your brand as an industry leader.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -3268,51 +3253,50 @@ export default function page({ params }) {
           ],
         },
       },
-     swiperdata: [
-  {
-    title: "Content Strategy & Planning",
-    description:
-      "Develop a robust content strategy tailored to your business goals. Plan and create engaging content that drives traffic and conversions.",
-    image: "/images/AllServiceImages/contentMarketingService1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "Content Marketing for SEO",
-    description:
-      "Integrate content marketing with your SEO strategy to boost organic traffic and improve your website’s search engine rankings.",
-    image: "/images/AllServiceImages/contentMarketingService2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Social Media Content Creation",
-    description:
-      "Enhance your social media presence with custom content designed to engage your audience and promote brand awareness across platforms.",
-    image: "/images/AllServiceImages/contentMarketingService3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Web Content Writing",
-    description:
-      "Ensure your website content is optimized for SEO and user experience. We create high-quality, informative content that resonates with your audience.",
-    image: "/images/AllServiceImages/contentMarketingService4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Blog & Article Writing",
-    description:
-      "Attract and engage readers with well-researched, SEO-friendly blog posts and articles that provide value to your audience and improve rankings.",
-    image: "/images/AllServiceImages/contentMarketingService5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Local Content Marketing",
-    description:
-      "Tailor your content to local markets and enhance visibility with our Local SEO-focused content marketing services.",
-    image: "/images/AllServiceImages/contentMarketingService6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "Content Strategy & Planning",
+          description:
+            "Develop a robust content strategy tailored to your business goals. Plan and create engaging content that drives traffic and conversions.",
+          image: "/images/AllServiceImages/contentMarketingService1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "Content Marketing for SEO",
+          description:
+            "Integrate content marketing with your SEO strategy to boost organic traffic and improve your website’s search engine rankings.",
+          image: "/images/AllServiceImages/contentMarketingService2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Social Media Content Creation",
+          description:
+            "Enhance your social media presence with custom content designed to engage your audience and promote brand awareness across platforms.",
+          image: "/images/AllServiceImages/contentMarketingService3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Web Content Writing",
+          description:
+            "Ensure your website content is optimized for SEO and user experience. We create high-quality, informative content that resonates with your audience.",
+          image: "/images/AllServiceImages/contentMarketingService4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Blog & Article Writing",
+          description:
+            "Attract and engage readers with well-researched, SEO-friendly blog posts and articles that provide value to your audience and improve rankings.",
+          image: "/images/AllServiceImages/contentMarketingService5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Local Content Marketing",
+          description:
+            "Tailor your content to local markets and enhance visibility with our Local SEO-focused content marketing services.",
+          image: "/images/AllServiceImages/contentMarketingService6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       cards: [
         {
           title: "Content Strategy",
@@ -3417,7 +3401,7 @@ export default function page({ params }) {
             icon: <FaHandsHelping className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/contentMarketingService1.avif",
+        img: "/images/AllServiceImages/contentMarketingService1.webp",
         lastPara:
           "Contact Nx Edge Solutions today to discover how our Content Marketing Services can elevate your brand and drive meaningful results.",
       },
@@ -3427,53 +3411,52 @@ export default function page({ params }) {
         Breadcrumb: "logo-design-service",
         heading: "Custom Logo Design Solutions",
         para: "At Nx Edge Solutions, we specialize in creating unique and memorable logos that reflect your brand's identity. Our talented designers collaborate with you to understand your vision, ensuring your logo stands out in today's competitive market. We combine creativity and strategy to deliver designs that not only look great but also resonate with your target audience.",
-        img: "/images/AllServiceImages/logoDesignService1.avif",
+        img: "/images/AllServiceImages/logoDesignService1.webp",
       },
       swiperdata: [
-  {
-    title: "Logo Strategy & Brand Identity",
-    description:
-      "Develop a logo strategy that reflects your brand's identity and values. Our designs ensure your logo stands out and makes a lasting impression.",
-    image: "/images/AllServiceImages/logoDesignService1.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "Custom Logo Design",
-    description:
-      "Create a custom logo tailored to your business’s unique style and target audience. Our designs are crafted to be memorable and timeless.",
-    image: "/images/AllServiceImages/logoDesignService2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Logo Redesign & Refresh",
-    description:
-      "Revitalize your existing logo with a fresh design that retains its core elements while modernizing the look to stay relevant in the market.",
-    image: "/images/AllServiceImages/logoDesignService3.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Business Card Logo Design",
-    description:
-      "Ensure your logo translates seamlessly onto business cards. Our design team crafts logos that enhance the visual appeal of your branding materials.",
-    image: "/images/AllServiceImages/logoDesignService4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Corporate Identity Logo Design",
-    description:
-      "Establish a cohesive corporate identity with a logo design that aligns with your company's values and communicates professionalism.",
-    image: "/images/AllServiceImages/logoDesignService5.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Creative Logo for Startups",
-    description:
-      "Design creative, impactful logos for startups, helping new businesses build strong brand recognition from the very beginning.",
-    image: "/images/AllServiceImages/logoDesignService8.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+        {
+          title: "Logo Strategy & Brand Identity",
+          description:
+            "Develop a logo strategy that reflects your brand's identity and values. Our designs ensure your logo stands out and makes a lasting impression.",
+          image: "/images/AllServiceImages/logoDesignService1.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "Custom Logo Design",
+          description:
+            "Create a custom logo tailored to your business’s unique style and target audience. Our designs are crafted to be memorable and timeless.",
+          image: "/images/AllServiceImages/logoDesignService2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Logo Redesign & Refresh",
+          description:
+            "Revitalize your existing logo with a fresh design that retains its core elements while modernizing the look to stay relevant in the market.",
+          image: "/images/AllServiceImages/logoDesignService3.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Business Card Logo Design",
+          description:
+            "Ensure your logo translates seamlessly onto business cards. Our design team crafts logos that enhance the visual appeal of your branding materials.",
+          image: "/images/AllServiceImages/logoDesignService4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Corporate Identity Logo Design",
+          description:
+            "Establish a cohesive corporate identity with a logo design that aligns with your company's values and communicates professionalism.",
+          image: "/images/AllServiceImages/logoDesignService5.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Creative Logo for Startups",
+          description:
+            "Design creative, impactful logos for startups, helping new businesses build strong brand recognition from the very beginning.",
+          image: "/images/AllServiceImages/logoDesignService8.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       gallerySection: {
         title: "Crafting Logos That Tell Your Story",
         subtitle: "Make Your Brand Unforgettable",
@@ -3482,20 +3465,20 @@ export default function page({ params }) {
           "Whether you're a startup or an established brand, we provide professional logo design services that enhance your brand recognition and help you connect with your audience. Let us bring your brand vision to life with a logo that leaves a lasting impression.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -3635,7 +3618,7 @@ export default function page({ params }) {
             icon: <FaCogs className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/logoDesignService9.avif",
+        img: "/images/AllServiceImages/logoDesignService9.webp",
         lastPara:
           "Whether you're launching a new business or rebranding an existing one, Nx Edge Solutions is your go-to partner for logo design. Our creative solutions and collaborative approach ensure your logo captures the essence of your brand. Let's work together to create a logo that sets your business apart from the competition.",
       },
@@ -3645,7 +3628,7 @@ export default function page({ params }) {
         Breadcrumb: "corporate-stationery-design",
         heading: "Custom Corporate Stationery Design Solutions",
         para: "At Nx Edge Solutions, we specialize in crafting bespoke corporate stationery that enhances your brand's professional image. Our skilled designers work closely with you to create cohesive designs for all your stationery needs, ensuring your business stands out with style and sophistication.",
-        img: "/images/AllServiceImages/corporateStationeryDesign1.avif",
+        img: "/images/AllServiceImages/corporateStationeryDesign1.webp",
       },
       gallerySection: {
         title: "Elevate Your Brand with Professional Stationery",
@@ -3655,20 +3638,20 @@ export default function page({ params }) {
           "Whether you're a startup or an established company, we provide professional design solutions that enhance your brand presence and credibility. Let us help you make a memorable impression with stationery that speaks to your brand's essence.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -3705,42 +3688,42 @@ export default function page({ params }) {
           title: "SEO Strategy & Optimization",
           description:
             "Craft a powerful SEO strategy tailored to your business. Optimize on-page and off-page factors to achieve long-term visibility and traffic growth.",
-          image: "/images/AllServiceImages/corporateStationeryDesign2.avif",
+          image: "/images/AllServiceImages/corporateStationeryDesign2.webp",
           bgColor: "#2E4053", // Darker Blue Slate
         },
         {
           title: "PPC Campaigns for SEO",
           description:
             "Leverage PPC campaigns to complement your SEO efforts and generate instant traffic while boosting your website's overall authority.",
-          image: "/images/AllServiceImages/corporateStationeryDesign3.avif",
+          image: "/images/AllServiceImages/corporateStationeryDesign3.webp",
           bgColor: "#6C3483", // Vibrant Purple
         },
         {
           title: "Social Media & SEO Integration",
           description:
             "Boost your SEO through social media integration, driving social signals and enhancing brand visibility across multiple channels.",
-          image: "/images/AllServiceImages/corporateStationeryDesign4.avif",
+          image: "/images/AllServiceImages/corporateStationeryDesign4.webp",
           bgColor: "#1E8449", // Forest Green
         },
         {
           title: "Web Design for SEO",
           description:
             "Ensure your website design is SEO-friendly. We focus on responsive designs, fast load times, and optimal user experience to boost your rankings.",
-          image: "/images/AllServiceImages/corporateStationeryDesign5.avif",
+          image: "/images/AllServiceImages/corporateStationeryDesign5.webp",
           bgColor: "#34495E", // Charcoal Blue
         },
         {
           title: "Content Creation for SEO",
           description:
             "Create high-quality, SEO-optimized content that engages your audience and improves your website’s search engine rankings with targeted keywords.",
-          image: "/images/AllServiceImages/corporateStationeryDesign6.avif",
+          image: "/images/AllServiceImages/corporateStationeryDesign6.webp",
           bgColor: "#884EA0", // Dark Lavender
         },
         {
           title: "Local SEO Optimization",
           description:
             "Improve your local search visibility with our Local SEO services. Optimize your Google My Business and ensure your business shows up in local searches.",
-          image: "/images/AllServiceImages/corporateStationeryDesign9.avif",
+          image: "/images/AllServiceImages/corporateStationeryDesign9.webp",
           bgColor: "#239B56", // Bold Green
         },
       ],
@@ -3853,7 +3836,7 @@ export default function page({ params }) {
             icon: <FaCogs className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/corporateStationeryDesign2.avif",
+        img: "/images/AllServiceImages/corporateStationeryDesign2.webp",
         lastPara:
           "Whether you're launching a new business or rebranding an existing one, Nx Edge Solutions is your trusted partner for corporate stationery design. Our creative solutions and collaborative approach ensure your stationery captures the essence of your brand. Let's work together to create stationery that enhances your professional image.",
       },
@@ -3863,53 +3846,52 @@ export default function page({ params }) {
         Breadcrumb: "brochure-design-service",
         heading: "Custom Brochure Design Solutions",
         para: "At Nx Edge Solutions, we specialize in crafting visually appealing brochures that effectively communicate your brand message. Our talented designers collaborate with you to create brochures that not only look stunning but also engage your audience and drive results.",
-        img: "/images/AllServiceImages/logoDesignService9.avif",
+        img: "/images/AllServiceImages/logoDesignService9.webp",
       },
-     swiperdata: [
-  {
-    title: "Corporate Brochure Design",
-    description:
-      "Create professional corporate brochures that effectively communicate your brand message, products, and services with a sleek, modern design.",
-    image: "/images/AllServiceImages/animatedServices8.avif",
-    bgColor: "#2E4053", // Darker Blue Slate
-  },
-  {
-    title: "Product Brochure Design",
-    description:
-      "Highlight your product features and benefits with an eye-catching product brochure designed to engage and inform your target audience.",
-    image: "/images/AllServiceImages/animatedServices2.avif",
-    bgColor: "#6C3483", // Vibrant Purple
-  },
-  {
-    title: "Event Brochure Design",
-    description:
-      "Design compelling event brochures that capture attention and provide essential information about your event in a visually appealing format.",
-    image: "/images/AllServiceImages/animatedServices5.avif",
-    bgColor: "#1E8449", // Forest Green
-  },
-  {
-    title: "Travel Brochure Design",
-    description:
-      "Showcase travel destinations, itineraries, and services with a captivating travel brochure design that inspires your audience to explore.",
-    image: "/images/AllServiceImages/animatedServices4.avif",
-    bgColor: "#34495E", // Charcoal Blue
-  },
-  {
-    title: "Real Estate Brochure Design",
-    description:
-      "Present properties and developments with a visually striking real estate brochure, designed to highlight key details and attract potential buyers.",
-    image: "/images/AllServiceImages/animatedServices3.avif",
-    bgColor: "#884EA0", // Dark Lavender
-  },
-  {
-    title: "Educational Brochure Design",
-    description:
-      "Engage students and parents with an educational brochure that clearly communicates your institution’s offerings and programs.",
-    image: "/images/AllServiceImages/animatedServices6.avif",
-    bgColor: "#239B56", // Bold Green
-  },
-]
-,
+      swiperdata: [
+        {
+          title: "Corporate Brochure Design",
+          description:
+            "Create professional corporate brochures that effectively communicate your brand message, products, and services with a sleek, modern design.",
+          image: "/images/AllServiceImages/animatedServices8.webp",
+          bgColor: "#2E4053", // Darker Blue Slate
+        },
+        {
+          title: "Product Brochure Design",
+          description:
+            "Highlight your product features and benefits with an eye-catching product brochure designed to engage and inform your target audience.",
+          image: "/images/AllServiceImages/animatedServices2.webp",
+          bgColor: "#6C3483", // Vibrant Purple
+        },
+        {
+          title: "Event Brochure Design",
+          description:
+            "Design compelling event brochures that capture attention and provide essential information about your event in a visually appealing format.",
+          image: "/images/AllServiceImages/animatedServices5.webp",
+          bgColor: "#1E8449", // Forest Green
+        },
+        {
+          title: "Travel Brochure Design",
+          description:
+            "Showcase travel destinations, itineraries, and services with a captivating travel brochure design that inspires your audience to explore.",
+          image: "/images/AllServiceImages/animatedServices4.webp",
+          bgColor: "#34495E", // Charcoal Blue
+        },
+        {
+          title: "Real Estate Brochure Design",
+          description:
+            "Present properties and developments with a visually striking real estate brochure, designed to highlight key details and attract potential buyers.",
+          image: "/images/AllServiceImages/animatedServices3.webp",
+          bgColor: "#884EA0", // Dark Lavender
+        },
+        {
+          title: "Educational Brochure Design",
+          description:
+            "Engage students and parents with an educational brochure that clearly communicates your institution’s offerings and programs.",
+          image: "/images/AllServiceImages/animatedServices6.webp",
+          bgColor: "#239B56", // Bold Green
+        },
+      ],
       gallerySection: {
         title: "Showcasing Your Brand with Beautiful Brochures",
         subtitle: "Captivate Your Audience",
@@ -3918,20 +3900,20 @@ export default function page({ params }) {
           "Whether you're a startup or an established organization, we provide professional design solutions that enhance your brand's visibility and credibility. Let us help you make a lasting impression with brochures that convey your unique story.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -4072,7 +4054,7 @@ export default function page({ params }) {
             icon: <FaCogs className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/androidapplicationdevelopment5.avif",
+        img: "/images/AllServiceImages/androidapplicationdevelopment5.webp",
         lastPara:
           "Whether you're launching a new product or rebranding an existing one, Nx Edge Solutions is your trusted partner for brochure design. Our creative solutions and collaborative approach ensure your brochures capture the essence of your brand. Let's work together to create brochures that enhance your marketing efforts.",
       },
@@ -4082,49 +4064,49 @@ export default function page({ params }) {
         Breadcrumb: "animated-services",
         heading: "Custom Animated Services Solutions",
         para: "At Nx Edge Solutions, we specialize in creating engaging and captivating animations that elevate your brand's message. Our talented animators work closely with you to bring your ideas to life, ensuring your animations resonate with your audience and enhance your overall brand experience.",
-        img: "/images/AllServiceImages/animatedServices10.avif",
+        img: "/images/AllServiceImages/animatedServices10.webp",
       },
       swiperdata: [
         {
           title: "3D Animation & Modeling",
           description:
             "Bring your concepts to life with high-quality 3D animations and models that captivate your audience and showcase your product in detail.",
-          image: "/images/AllServiceImages/animatedServices8.avif",
+          image: "/images/AllServiceImages/animatedServices8.webp",
           bgColor: "#2E4053", // Darker Blue Slate
         },
         {
           title: "Explainer Videos",
           description:
             "Create engaging explainer videos that simplify complex ideas and help your audience understand your product or service clearly.",
-          image: "/images/AllServiceImages/animatedServices2.avif",
+          image: "/images/AllServiceImages/animatedServices2.webp",
           bgColor: "#6C3483", // Vibrant Purple
         },
         {
           title: "Character Animation",
           description:
             "Develop dynamic character animations that bring your stories to life, adding personality and motion to your brand's narrative.",
-          image: "/images/AllServiceImages/animatedServices5.avif",
+          image: "/images/AllServiceImages/animatedServices5.webp",
           bgColor: "#1E8449", // Forest Green
         },
         {
           title: "2D Animation & Motion Graphics",
           description:
             "Produce captivating 2D animations and motion graphics to create visually appealing videos that engage and inform your audience.",
-          image: "/images/AllServiceImages/animatedServices4.avif",
+          image: "/images/AllServiceImages/animatedServices4.webp",
           bgColor: "#34495E", // Charcoal Blue
         },
         {
           title: "Product Animation",
           description:
             "Showcase your product features with detailed product animations that highlight its design, functionality, and value to potential customers.",
-          image: "/images/AllServiceImages/animatedServices3.avif",
+          image: "/images/AllServiceImages/animatedServices3.webp",
           bgColor: "#884EA0", // Dark Lavender
         },
         {
           title: "Animated Commercials",
           description:
             "Create memorable animated commercials that promote your brand, leaving a lasting impact on your target audience with creative storytelling.",
-          image: "/images/AllServiceImages/animatedServices6.avif",
+          image: "/images/AllServiceImages/animatedServices6.webp",
           bgColor: "#239B56", // Bold Green
         },
       ],
@@ -4136,20 +4118,20 @@ export default function page({ params }) {
           "Whether you're a startup or an established brand, we provide professional animation services that enhance your marketing efforts and create memorable experiences. Let us help you communicate your message effectively with animations that stand out.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -4271,7 +4253,7 @@ export default function page({ params }) {
             icon: <FaCogs className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/animatedServices4.avif",
+        img: "/images/AllServiceImages/animatedServices4.webp",
         lastPara:
           "Whether you're looking to create an explainer video or enhance your marketing materials with animation, Nx Edge Solutions is your trusted partner. Our creative solutions and collaborative approach ensure your animations effectively communicate your brand's message.",
       },
@@ -4281,49 +4263,49 @@ export default function page({ params }) {
         Breadcrumb: "creative-services",
         heading: "Custom Creative Services Solutions",
         para: "At Nx Edge Solutions, we specialize in providing innovative creative services that elevate your brand's presence. Our team of creative experts collaborates with you to develop unique solutions that resonate with your audience and enhance your overall marketing strategy.",
-        img: "/images/AllServiceImages/creativeServices8.avif",
+        img: "/images/AllServiceImages/creativeServices8.webp",
       },
       swiperdata: [
         {
           title: "Brand Identity Design",
           description:
             "Develop a strong brand identity with cohesive visual elements, including logo, color schemes, and typography, to make a lasting impression.",
-          image: "/images/AllServiceImages/creativeServices1.avif",
+          image: "/images/AllServiceImages/creativeServices1.webp",
           bgColor: "#2E4053", // Darker Blue Slate
         },
         {
           title: "Graphic Design Services",
           description:
             "Transform ideas into captivating visuals with our expert graphic design services, ranging from marketing materials to custom illustrations.",
-          image: "/images/AllServiceImages/creativeServices2.avif",
+          image: "/images/AllServiceImages/creativeServices2.webp",
           bgColor: "#6C3483", // Vibrant Purple
         },
         {
           title: "Motion Graphics & Animation",
           description:
             "Engage your audience with compelling motion graphics and animation that tell your story in a dynamic, visually appealing way.",
-          image: "/images/AllServiceImages/creativeServices3.avif",
+          image: "/images/AllServiceImages/creativeServices3.webp",
           bgColor: "#1E8449", // Forest Green
         },
         {
           title: "UI/UX Design",
           description:
             "Create user-centered designs that not only look good but also provide an intuitive and seamless user experience across all devices.",
-          image: "/images/AllServiceImages/creativeServices4.avif",
+          image: "/images/AllServiceImages/creativeServices4.webp",
           bgColor: "#34495E", // Charcoal Blue
         },
         {
           title: "Print & Digital Media Design",
           description:
             "Craft stunning print and digital media designs for brochures, banners, and online ads, ensuring consistent branding across platforms.",
-          image: "/images/AllServiceImages/creativeServices5.avif",
+          image: "/images/AllServiceImages/creativeServices5.webp",
           bgColor: "#884EA0", // Dark Lavender
         },
         {
           title: "Packaging Design",
           description:
             "Design eye-catching, functional packaging that not only protects your product but also enhances its appeal and promotes your brand.",
-          image: "/images/AllServiceImages/creativeServices6.avif",
+          image: "/images/AllServiceImages/creativeServices6.webp",
           bgColor: "#239B56", // Bold Green
         },
       ],
@@ -4336,20 +4318,20 @@ export default function page({ params }) {
           "Whether you're a startup or an established enterprise, we provide professional creative solutions that enhance your brand identity and drive results. Let us help you tell your story through innovative and captivating designs.",
         ],
         images: [
-          { id: 1, src: "/images/sammBusiness.avif", alt: "PPC Campaign" },
+          { id: 1, src: "/images/sammBusiness.webp", alt: "PPC Campaign" },
           {
             id: 2,
-            src: "/images/smallBusiness2.avif",
+            src: "/images/smallBusiness2.webp",
             alt: "Effective Ad Targeting",
           },
           {
             id: 3,
-            src: "/images/smallBusiness3.avif",
+            src: "/images/smallBusiness3.webp",
             alt: "Optimized Results",
           },
           {
             id: 4,
-            src: "/images/samllBusiness4.avif",
+            src: "/images/samllBusiness4.webp",
             alt: "Conversion Strategy",
           },
         ],
@@ -4479,11 +4461,74 @@ export default function page({ params }) {
             icon: <FaCogs className="text-xl lg:text-2xl" />,
           },
         ],
-        img: "/images/AllServiceImages/creativeServices8.avif",
+        img: "/images/AllServiceImages/creativeServices8.webp",
         lastPara:
           "Whether you're looking to enhance your brand identity or launch a new marketing campaign, Nx Edge Solutions is your trusted partner for creative services. Our innovative solutions and collaborative approach ensure your creative projects resonate with your target audience.",
       },
     },
+  };
+
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    // course: "",
+    message: "",
+    userEmail: "shubham.developerr@gmail.com",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const url = "https://sendingmail-6znv.onrender.com/sendmail"; // Replace with your actual API endpoint
+    const data = new URLSearchParams();
+
+    // Use the formData values instead of hardcoded values
+    data.append("S_name", formData.name);
+    data.append("S_phone", formData.phone);
+    data.append("message", formData.message);
+    data.append("S_email", formData.email);
+    data.append("userEmailsir", formData.userEmail);
+    // data.append("S_services", formData.course);
+
+    try {
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded", // URL-encoded form data
+        },
+        body: data.toString(), // Send the URL-encoded string
+      });
+
+      Swal.fire({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success",
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        console.log("Success:", result);
+      } else {
+        console.error("Error:", response.statusText); // Handle error
+      }
+    } catch (error) {
+      console.error("Network error:", error); // Handle network error
+    }
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      // course: "",
+      message: "",
+      userEmail: "shubham.developerr@gmail.com",
+    });
+
+    setFormLoader(true);
   };
 
   return (
@@ -4520,12 +4565,16 @@ export default function page({ params }) {
 
           {/* Buttons Section */}
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 mt-6">
-            <button className="bg-[#dc3545] sm:w-fit text-white py-2 px-4 md:px-5 lg:px-8 transition duration-400 ease-in-out rounded-md text-sm sm:text-base focus:outline-none hover:bg-gray-300 hover:bg-gradient-to-r from-teal-400 to-indigo-700">
+           <a href="tel:+91-512-640-6568">
+           <button className="bg-[#dc3545] sm:w-fit text-white py-2 px-4 md:px-5 lg:px-8 transition duration-400 ease-in-out rounded-md text-sm sm:text-base focus:outline-none hover:bg-gray-300 hover:bg-gradient-to-r from-teal-400 to-indigo-700">
               Quick Enquiry
             </button>
+           </a>
+            <a href="tel:+91-512-640-6568">
             <button className="border border-white sm:w-fit text-white font-semibold py-2 px-4 sm:py-3 sm:px-6 rounded-lg text-sm sm:text-base transition-all">
               Call us
             </button>
+            </a>
           </div>
         </div>
 
@@ -4536,9 +4585,9 @@ export default function page({ params }) {
         />
       </section>
 
-      <div className="layout grid grid-cols-1 lg:grid-cols-9 md:px-10 lg:px-20  gap-10 py-10">
+      <div className="layout grid grid-cols-1 xl:grid-cols-9 md:px-10 lg:px-20  gap-10 py-10">
         {/* left side content Section  */}
-        <div className="lg:col-span-6 space-y-4 px-4">
+        <div className="xl:col-span-6 space-y-4 px-4">
           <div className="space-y-5 text-center md:text-start secondSection">
             <div className=" space-y-4 ">
               <h4 className="text-lg font-bold md:text-3xl ">
@@ -4570,7 +4619,7 @@ export default function page({ params }) {
                     spaceBetween: 30,
                   },
                   1024: {
-                    slidesPerView: 4, // For larger screens
+                    slidesPerView: 3, // For larger screens
                     spaceBetween: 30,
                   },
                   1440: {
@@ -4667,7 +4716,7 @@ export default function page({ params }) {
           </div>
 
           {/* get support contcat  */}
-          <div className="GetSupport rounded-2xl bg-[url('/images/InnerService.avif')] bg-cover bg-center bg-no-repeat shadow-lg mx-auto px-6 ">
+          <div className="GetSupport rounded-2xl bg-[url('/images/InnerService.webp')] bg-cover bg-center bg-no-repeat shadow-lg mx-auto px-6 ">
             <div className="bg-black/40 p-6 rounded-lg shadow-md">
               <div className="flex justify-center md:justify-end items-center">
                 <div className="w-full md:w-1/2 md:ml-4">
@@ -4742,10 +4791,11 @@ export default function page({ params }) {
         </div>
 
         {/* right side form and Link section */}
-        <div className="lg:col-span-3">
-          <div className="RightServiceCard space-y-8 sticky top-10">
-            <div className="card1 bg-gray-100 px-4 border  rounded-lg py-8">
-              <h5 className="text-center  font-bold text-lg md:text-2xl">
+        <div className="xl:col-span-3 ">
+          <div className="RightServiceCard lg:grid lg: lg:grid-cols-2 xl:grid-cols-1 gap-5 xl:space-y-8 sticky top-10">
+            <div className="card1  bg-gray-100 px-5 border  rounded-lg py-8">
+           <div className="bg-white pt-2 rounded-md">
+           <h5 className="text-center  font-bold text-lg md:text-xl">
                 Service Menu
               </h5>
               <ul className="flex flex-col gap-3 text-lg">
@@ -4753,7 +4803,7 @@ export default function page({ params }) {
                   <li key={elm.servieName} className="border-b p-2">
                     <button
                       onClick={() => handleServiceClick(elm.servieName)}
-                      className="flex cursor-pointer items-center justify-between w-full text-left p-2 hover:bg-gray-200 transition"
+                      className="flex cursor-pointer items-center justify-between w-full text-left p-2 bg-gray-100 rounded transition"
                     >
                       {elm.servieName}
                       <IoIosArrowForward
@@ -4765,9 +4815,9 @@ export default function page({ params }) {
                     {curentService === elm.servieName && (
                       <ul className="flex flex-col gap-2 pl-4">
                         {elm.ChilService.map((child) => (
-                          <li key={child.name}>
+                          <li key={child.name} className="border-b rounded-md py-2 px-3   hover:font-bold hover:bg-slate-50 text-base">
                             <Link href={child.link}>
-                              <p className="text-[#0284C7] hover:underline">
+                              <p className="text-slate-700 ">
                                 {child.name}
                               </p>
                             </Link>
@@ -4778,14 +4828,18 @@ export default function page({ params }) {
                   </li>
                 ))}
               </ul>
+           </div>
             </div>
-            <div className="card2 px-4  bg-slate-50 py-8 border rounded-lg">
-              <h5 className="text-center text-2xl">Fill The Form</h5>
+            <div className="card2 px-4 space-y-5  bg-slate-50 py-8 border rounded-lg">
+              <h5 className="text-center text-xl font-bold">Fill The Form</h5>
               <div className="formSection">
-                <form action="" className="flex flex-col gap-4">
+                <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                   <div className="relative">
                     <input
                       type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       placeholder="Full Name"
                       className="border px-2 py-2 w-full"
                     />
@@ -4794,6 +4848,9 @@ export default function page({ params }) {
                   <div className="relative">
                     <input
                       type="text"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       placeholder="Your Email"
                       className="border px-2 py-2 w-full"
                     />
@@ -4802,6 +4859,9 @@ export default function page({ params }) {
                   <div className="relative">
                     <input
                       type="text"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       placeholder="Phone Number"
                       className="border px-2 py-2 w-full"
                     />
@@ -4809,14 +4869,16 @@ export default function page({ params }) {
                   </div>
                   <div className="relative">
                     <textarea
-                      name=""
-                      id=""
-                      className="border min-h-[10rem] min-w-full"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      placeholder="Your Message"
+                      className="border min-h-[10rem] min-w-full px-2"
                     ></textarea>
                     <GrEdit className="absolute right-8 top-3" />
                   </div>
                   <div>
-                    <button className="w-full bg-[#0284C7]  py-2 text-white font-bold rounded-lg">
+                    <button className="w-full bg-[#0284C7] py-2 text-white font-bold rounded-lg">
                       Send Now
                     </button>
                   </div>

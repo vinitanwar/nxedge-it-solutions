@@ -33,8 +33,8 @@ const ContactUs = () => {
   //   },
   // ];
 
-  const [formSubimitAlert, setFormSubmitAlert] = useState(false);
-  const [formLoader,setFormLoader]=useState(false)
+  // const [formSubimitAlert, setFormSubmitAlert] = useState(false);
+  // const [formLoader,setFormLoader]=useState(false)
 
   const [formData, setFormData] = useState({
     name: "",
@@ -42,13 +42,12 @@ const ContactUs = () => {
     phone: "",
     course: "",
     message: "",
-    userEmail: "shubham.developerr@gmail.com",
+    userEmail: "invoice@nxedgesol.com",
   });
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
-  console.log(formData);
 
 
   const handleSubmit = async (e) => {
@@ -64,7 +63,6 @@ const ContactUs = () => {
     data.append("userEmailsir", formData.userEmail);
     data.append("S_services", formData.course);
 
-    console.log("wrggf", data);
 
     try {
       const response = await fetch(url, {
@@ -130,8 +128,8 @@ const ContactUs = () => {
             </div>
             <h3 className="text-xl font-bold my-3">Email Address</h3>
             <p>
-              <a href="mailto:info@webmail.com">info@webmail.com</a> <br />
-              <a href="mailto:jobs@webexample.com">jobs@webexample.com</a>
+              <a href="mailto:hiring@nxedgesol.com">hiring@nxedgesol.com</a> <br />
+              <a href="mailto:timesheet@nxedgesol.com.com">timesheet@nxedgesol.com</a>
             </p>
           </div>
 
@@ -147,8 +145,7 @@ const ContactUs = () => {
             </div>
             <h3 className="text-xl font-bold my-3">Phone Number</h3>
             <p>
-              +0123-456789 <br />
-              +987-6543210
+            +91-512-640-6568
             </p>
           </div>
 
@@ -164,9 +161,7 @@ const ContactUs = () => {
             </div>
             <h3 className="text-xl font-bold my-3">Office Address</h3>
             <p>
-              CWEP0205, Compass Building, Al Shohada Road,
-              <br /> Al Hamra Industrial Zone-FZ, Ras Al Khaimah, <br /> United
-              Arab Emirates
+            1400 Avery Ranch Blvd, Ste C200 Austin,Texas-78717
             </p>
           </div>
         </div>
@@ -263,14 +258,14 @@ const ContactUs = () => {
                   className="w-full border border-gray-300 p-3 rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
                   required
                 ></textarea>
-                {formSubimitAlert && <div className="bg-sky-100 py-4 px-10 rounded-xl space-y-2">
+                {/* {formSubimitAlert && <div className="bg-sky-100 py-4 px-10 rounded-xl space-y-2">
                  
                   <p className="text-xs"> Your message has been sent.Thank you!</p>
                   
                 </div>}
               {formLoader&& <div className="flex justify-start items-center px-10">
              <div className="animate-spin rounded-full h-8 w-8 border-t-4 border-b-4 border-blue-500"></div>
-            </div>} 
+            </div>}  */}
 
                 <button
                   type="submit"
